@@ -1,0 +1,1384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    /*selector universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /*font-size: 16px de base*/
+}
+
+/* ==========          MOBILE FIRST           ==============*/
+
+/************************************************************/
+/*************    Comienzo HEADER Nav Bar    ****************/
+/*************           mobile              ****************/
+/************************************************************/
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header nav div a img {
+    width: 80%;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: right;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /*saca el subrayado*/
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+nav li a:active {
+    color: #ff5174;
+    /* color: #10e47a;*/
+
+}
+
+
+nav {
+    background-color: black;
+    width: 100%;
+
+}
+
+.navbar-toggler {
+    /*class bootstrap*/
+    background-color: white;
+}
+
+.nav-links {
+    /* class bootstrap*/
+    text-align: center;
+}
+
+/************************************************************/
+/*************      Fin HEADER Nav Bar     ******************/
+/*************           mobile            ******************/
+/************************************************************/
+
+
+
+/*************************************************************/
+/*************         Comienzo MAIN         *****************/
+/*************             mobile            *****************/
+/*************************************************************/
+
+
+/* ::::::::::::::::      HERO (mobile)     :::::::::::::::: */
+
+.hero {
+
+    /*justify-content: center;*/
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    background-color: #ff5174;
+
+}
+
+.hero h1 {
+    margin-top: 6rem;
+    margin-bottom: 0.8rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+
+    animation: aparecer-h1 3s infinite;
+    /*tmb se puede usar animation-name: mouse // animation-iteration-count: infinitive // animation-duration: 3s*/
+}
+
+@keyframes aparecer-h1 {
+    0% {
+        opacity: 0;
+
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
+
+.container-mision {
+    /*margin: arriba y abajo - izq y derecha*/
+    padding-top: 3rem;
+
+    /*64 px*/
+    background-color: #10e47a;
+    text-align: left;
+}
+
+
+.mision {
+    margin: 0 1.5rem;
+}
+
+.h2-mision {
+
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 0.0625rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.text-mision {
+    margin-top: 1rem;
+    text-align: left;
+
+}
+
+.text-mision2 {
+    text-align: left;
+    margin-bottom: 3.5rem;
+}
+
+.img-mision {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+
+
+.container-vision {
+    background-color: #fff;
+
+}
+
+
+.vision {
+    margin: 0 1.5rem;
+}
+
+.h2-vision {
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0.0625rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.text-vision {
+
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 3rem;
+
+}
+
+.text-vision2 {
+
+    text-align: left;
+    margin-bottom: 3.5rem;
+}
+
+.img-vision {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+.container-valores {
+    background-color: #fff;
+
+}
+
+
+.valores {
+    margin: 0 1.5rem;
+}
+
+.h2-valores {
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0.0625rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.text-valores {
+
+    margin-top: 1rem;
+    text-align: left;
+
+}
+
+.text-valores {
+
+    text-align: left;
+    margin-bottom: 3.5rem;
+}
+
+.img-valores {
+    display: none;
+
+}
+
+/*********************************************************/
+/*************          Fin MAIN        ******************/
+/*************           mobile         ******************/
+/*********************************************************/
+
+
+
+/********************************************************/
+/************   Comienzo  QUIENES SOMOS  ****************/
+/************   (nosotros.html) mobile  *****************/
+/********************************************************/
+
+.container-quienes {
+    /*margin: arriba y abajo - izq y derecha*/
+    padding: 3rem;
+
+    /*64 px*/
+    background-color: #10e47a;
+    text-align: left;
+
+}
+
+.h2-quienes {
+
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1px;
+    font-size: 1.875rem;
+    font-weight: bold;
+
+}
+
+.h3-nombre {
+    margin-top: 1.875rem;
+    font-weight: bold;
+}
+
+
+
+.text-quienes {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+#container-nosotros {
+    display: flex;
+    flex-direction: column;
+    /*justify-items: center; va solo en grid*/
+
+    z-index: 999;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    background-color: #10e47a;
+}
+
+.card .contenido .text-present1 {
+    margin-bottom: 1.875rem;
+    text-align: left;
+    display: block;
+}
+
+.contenido {
+    background-color: #10e47a;
+    margin: 0 1.5rem;
+
+}
+
+.text-present1 {
+    font-weight: bold;
+}
+
+.text-present2 {
+    margin-bottom: 1.875rem;
+}
+
+
+/***********************************************************/
+/*************     Comienzo SERVICIOS    *******************/
+/*************  (servicios.html) mobile  *******************/
+/***********************************************************/
+
+#contenedor-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    padding-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contenedor-service .service-text {
+    margin-bottom: 1.875rem;
+    padding: 0.9375rem;
+    text-align: center;
+}
+
+
+.card-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#service-item {
+    margin: 1.875rem 1rem;
+}
+
+#service-item p {
+    margin-bottom: 1.875rem;
+}
+
+#container-empresas {
+    width: 100%;
+    background-color: #000;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+#container-empresas h3 {
+    color: white;
+    margin-top: 5rem;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.h3-servicios {
+    font-weight: bold;
+}
+
+#container-empresas .empresas-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresas-img img {
+    margin: 0 1rem;
+    width: 50%;
+ 
+
+    animation: scroll 15s linear infinite;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-20);
+    }
+
+    50% {
+        transform: translateX(calc(-300px * 3));
+    }
+
+
+}
+
+
+
+
+
+/***********************************************************/
+/*************        Fin SERVICIOS      *******************/
+/*************  (servicios.html) mobile  *******************/
+/***********************************************************/
+
+
+/***********************************************************/
+/*************     Comienzo GALERIA      *******************/
+/*************  (proyectos.html) mobile  *******************/
+/***********************************************************/
+
+.contenedor-imagenes {
+    padding: 1.25rem 0;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        "imagen-1"
+        "imagen-2"
+        "imagen-3"
+        "imagen-4"
+        "imagen-5"
+        "imagen-6";
+
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+
+}
+
+.imagen-1 {
+    grid-area: imagen-1;
+
+}
+
+.imagen-2 {
+    grid-area: imagen-2;
+
+}
+
+.imagen-3 {
+    grid-area: imagen-3;
+
+}
+
+.imagen-4 {
+    grid-area: imagen-4;
+
+}
+
+.imagen-5 {
+    grid-area: imagen-5;
+
+}
+
+.imagen-6 {
+    grid-area: imagen-6;
+
+}
+
+.contenedor-imagenes .imagen {
+    width: 80%
+        /*margin-bottom: 5px;*/
+        /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
+        /*blur de fondo*/
+}
+
+.imagen img {
+    width: 100%;
+
+}
+
+.h4-proyecto {
+    font-weight: bold;
+    text-align: center;
+}
+
+/************************************************************/
+/*************          Fin GALERIA        ******************/
+/*************   (proyectos.html) mobile   ******************/
+/************************************************************/
+
+
+/************************************************************/
+/*************           Comienzo          ******************/
+/*************    (contacto.html) mobile   ******************/
+/************************************************************/
+
+#contenedor-consultas {
+    display: block;
+    text-align: center;
+    padding-top: 8rem;
+
+}
+
+.h2-consultas {
+    font-size: 1rem;
+
+}
+
+.text-consultas {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.text-consultas-dos {
+    font-size: 1.5rem;
+}
+
+
+/* ::::::::: Formulario (contacto.html) mobile :::::::::::::*/
+
+#contenedor-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form .form-group {
+    margin-bottom: 16px;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ededed;
+    border: 2px solid #ededed;
+
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus {
+    border-color: #ff5174;
+    outline: 0 none;
+}
+
+.boton {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9375rem;
+    height: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    /*border-radius: 4px;*/
+    background: #10e47a;
+    border: 2px solid #10e47a;
+}
+
+.boton:active {
+    /*box-shadow: 5px 5px 10px rgb(212, 212, 212);*/
+    border: 2px solid;
+    background-color: #fff;
+    /* color: #10e47a;*/
+
+}
+
+/************************************************************/
+/*************              Fin            ******************/
+/*************    (contacto.html) mobile   ******************/
+/************************************************************/
+
+
+/**********************************************************/
+/*************       Comienzo FOOTER      *****************/
+/*************            mobile          *****************/
+/**********************************************************/
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6.5rem;
+    background-color: #ff5174;
+}
+
+.texto-copyright {
+
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #ff5174;
+}
+
+
+.redes {
+    display: none;
+}
+
+
+footer p a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.link-servicios:active {
+    color: #fff;
+
+}
+
+/************************************************************/
+/*************          Fin FOOTER         ******************/
+/*************            mobile           ******************/
+/************************************************************/
+
+
+@media screen and (min-width: 1024px) {
+    /* cuando tenga menos de 599px va a estar blanco
+     cuando la pantalla tenga 600px o + se va reproducir de otra manera)*/
+
+
+    /* =============         DESKTOP             =========== */
+
+    /*********************************************************/
+    /************     Comienzo HEADER Nav Bar    *************/
+    /************            desktop             *************/
+    /*********************************************************/
+
+
+    header {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+
+    }
+
+    nav ul {
+        display: flex;
+        gap: 3rem;
+        justify-content: right;
+    }
+
+    /*nav ul li {font-weight: bold; }*/
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        /*saca el subrayado*/
+
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        transition: 0.4s;
+
+
+    }
+
+    nav li a:hover {
+        transition: all 0.3s ease 0s;
+        color: #ff5174;
+        /* color: #10e47a;*/
+
+    }
+
+    .navbar-toggler {
+        background-color: white;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    /***************************************************/
+    /********     Fin     HEADER Nav Bar     ***********/
+    /********            desktop             ***********/
+    /***************************************************/
+
+
+    /*********************************************************/
+    /************     Comienzo     MAIN          *************/
+    /************            desktop             *************/
+    /*********************************************************/
+
+    /* :::::::::::::      HERO (desktop)     :::::::::::: */
+    .hero {
+
+        /*justify-content: center;*/
+        height: 30%;
+        padding: 10%;
+        text-align: center;
+        background-color: #ff5174;
+
+    }
+
+    .hero h1 {
+
+        font-size: 5rem;
+        margin-top: 4rem;
+        text-align: center;
+        font-weight: bold;
+
+        animation: aparecer-h1 3s infinite;
+        /*tmb se puede usar animation-name: mouse // animation-iteration-count: infinitive // animation-duration: 3s*/
+    }
+
+    @keyframes aparecer-h1 {
+        0% {
+            opacity: 0;
+
+        }
+
+        70% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    /* animation-duration: 3s;
+    animation-name: slidein;
+    }
+
+
+ @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }*/
+
+
+
+
+    /* :::::::::   MISION (desktop) (index.html)  ::::::::: */
+
+
+
+    .container-mision {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding-top: 3.5rem;
+        /*64 px*/
+        background-color: #10e47a;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "h2-mision"
+            "text-mision"
+            "text-mision2"
+            "img-mision";
+
+    }
+
+    .mision {
+        margin: 3rem 33rem;
+    }
+
+    .h2-mision {
+        grid-area: h2-mision;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .text-mision {
+        grid-area: text-mision;
+        margin-top: 2rem;
+        text-align: left;
+
+    }
+
+
+
+    .text-mision2 {
+        grid-area: text-mision2;
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+
+    .img-mision {
+        grid-area: img-mision;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* :::::::::   VISION (desktop) (index.html)  ::::::::: */
+
+
+    .container-vision {
+        display: flex;
+    }
+
+
+    .container-vision {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "h2-vision text-vision img-vision";
+
+    }
+
+    .vision {
+        display: flex;
+
+    }
+
+    .h2-vision {
+        grid-area: h2-vision;
+
+        margin-top: 13rem;
+        margin-left: 7rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+
+    .text-vision {
+        grid-area: text-mision;
+        text-align: left;
+        margin: 13rem 15rem 0 10rem;
+    }
+
+
+
+    .img-vision {
+        grid-area: img-vision;
+        width: 100%;
+
+    }
+
+    /* :::::::::   VALORES (desktop) (index.html)  ::::::::: */
+
+    .container-valores {
+        background-color: #10e47a;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "img-valores h2-valores text-valores";
+    }
+
+    .valores {
+        display: flex;
+        margin: 0;
+    }
+
+    .h2-valores {
+        grid-area: h2-valores;
+        margin: 13rem 3.125rem 0 7rem;
+        /*margin: arriba y abajo - izq y derecha*/
+        font-weight: bold;
+        text-align: center;
+        font-size: 2.5rem;
+
+
+    }
+
+    .text-valores {
+        grid-area: text-valores;
+        width: 70%;
+        margin: 8rem;
+        text-align: left;
+    }
+
+
+    .img-valores {
+        display: block;
+        grid-area: img-valores;
+
+    }
+
+
+    /*********************************************************/
+    /************        Comienzo  GALERIA       *************/
+    /************    (proyectos.html) desktop    *************/
+    /*********************************************************/
+
+    .contenedor-imagenes {
+        padding: 1.25rem 0;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (3) 1fr;
+
+        grid-template-areas:
+            "imagen-1 imagen-2"
+            "imagen-3 imagen-4"
+            "imagen-5 imagen-6";
+
+        justify-items: center;
+        align-items: center;
+        gap: 1.25rem;
+
+    }
+
+    .imagen-1 {
+        grid-area: imagen-1;
+        justify-self: right;
+        align-self: start;
+    }
+
+    .imagen-2 {
+        grid-area: imagen-2;
+        justify-self: left;
+        align-self: start;
+    }
+
+    .imagen-3 {
+        grid-area: imagen-3;
+        justify-self: right;
+        align-self: start;
+    }
+
+    .imagen-4 {
+        grid-area: imagen-4;
+        justify-self: left;
+        align-self: start;
+    }
+
+    .imagen-5 {
+        grid-area: imagen-5;
+        justify-self: right;
+        align-self: start;
+    }
+
+    .imagen-6 {
+        grid-area: imagen-6;
+        justify-self: left;
+        align-self: start;
+    }
+
+
+
+
+    .contenedor-imagenes .imagen {
+        width: 650px;
+        position: relative;
+        height: 350px;
+        /*margin-bottom: 5px;*/
+        /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
+        /*blur de fondo*/
+    }
+
+    .imagen img {
+        width: 650px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #10e47a;
+        /*opacity: .93;*/
+        /*transparencia verde*/
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .6s ease-in-out;
+    }
+
+    .overlay h4 {
+        color: #000;
+        font-weight: bold;
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .p-proyecto {
+        color: #000;
+        font-weight: lighter;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -30%);
+
+
+    }
+
+    .imagen:hover .overlay {
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+    .contenedor-proyecto div img {
+        width: 70rem;
+
+
+    }
+
+
+
+
+    /*********************************************************/
+    /************    Comienzo  QUIENES SOMOS     *************/
+    /************    (nosotros.html) desktop     *************/
+    /*********************************************************/
+
+    .container-quienes {
+        padding-top: 4.5rem;
+        background-color: #10e47a;
+    }
+
+    #container-nosotros {
+
+        /*justify-items: center; va solo en grid*/
+        background-color: #10e47a;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas:
+            "nosotros-1 nosotros-2 nosotros-3";
+
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .nosotros-1 {
+        grid-area: nosotros-1;
+
+    }
+
+    .nosotros-2 {
+        grid-area: nosotros-2;
+
+    }
+
+    .nosotros-3 {
+        grid-area: nosotros-3;
+
+    }
+
+
+    .quienes-somos {
+
+        margin: 3rem 33rem;
+    }
+
+    .h2-quienes {
+
+        margin-top: 1rem;
+
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .text-quienes {
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+
+
+
+
+
+    .text-quienes2 {
+
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+
+    .card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 50px;
+    }
+
+    .card .contenido .text-present1 {
+        margin-bottom: 30px;
+        text-align: left;
+        /*display: block;*/
+    }
+
+    .text-present2 {
+        margin-bottom: 50px;
+    }
+
+    /*********************************************************/
+    /************       Fin  QUIENES SOMOS       *************/
+    /************    (nosotros.html) desktop     *************/
+    /*********************************************************/
+
+
+    /*********************************************************/
+    /************       Comienzo  SERVICIOS      *************/
+    /************    (servicios.html) desktop    *************/
+    /*********************************************************/
+
+    #contenedor-service {
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    #contenedor-service .cards {
+        width: 50%;
+        padding-top: 1.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenedor-service .service-text {
+        margin-bottom: 1.875rem;
+        padding: 0.9375rem;
+        text-align: center;
+    }
+
+    #contenedor-service .column {
+        display: flex;
+    }
+
+    .card-service {
+        display: flex;
+        justify-content: left;
+        padding: 30px;
+    }
+
+
+    #service-item {
+        margin: 1.875rem 6.25rem;
+    }
+
+    #service-item p {
+        margin-bottom: 1.875rem;
+    }
+
+    #container-empresas {
+        width: 100%;
+        background-color: #000;
+            
+
+    }
+
+    #container-empresas h3 {
+        color: white;
+        margin: 2rem 2rem;
+        font-size: x-large;
+        text-align: center;
+    }
+
+
+    .empresas-img img{
+        width: 15%;
+        display: flex;  
+        animation: none;         
+        
+    }
+
+
+
+
+
+
+    /*********************************************************/
+    /************         Fin   SERVICIOS        *************/
+    /************    (servicios.html) desktop    *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************            Comienzo            *************/
+    /************    (contacto.html) desktop     *************/
+    /*********************************************************/
+
+    #contenedor-consultas {
+        display: block;
+        text-align: center;
+        padding-top: 8rem;
+
+    }
+
+    .h2-consultas {
+        font-size: 1rem;
+
+    }
+
+    .text-consultas {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .text-consultas-dos {
+        font-size: 1.5rem;
+    }
+
+    /* ::::    Inicio  FORMULARIO (contacto.html) desktop  :::: */
+    #contenedor-form {
+        margin: 6rem 30rem;
+    }
+
+
+    form label {
+        display: block;
+        margin-bottom: 0.625rem;
+        font-weight: bold;
+    }
+
+    form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    form .form-control {
+        display: block;
+        width: 100%;
+        padding: 7px 12px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #ededed;
+        border: 2px solid #ededed;
+
+    }
+
+    textarea:focus,
+    input:focus,
+    input[type]:focus {
+        border-color: #ff5174;
+        outline: 0 none;
+    }
+
+    .boton {
+        width: 35%;
+        display: inline-block;
+        font-size: 15px;
+        padding: 12px 50px;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /*border-radius: 4px;*/
+        background: #10e47a;
+        border: 2px solid #10e47a;
+    }
+
+    .boton:hover {
+        /*box-shadow: 5px 5px 10px rgb(212, 212, 212);*/
+        border: 2px solid;
+        background-color: #fff;
+        /* color: #10e47a;*/
+
+    }
+
+    /* ::::    Fin  FORMULARIO (contacto.html) desktop    ::::*/
+
+
+    /*********************************************************/
+    /************               Fin              *************/
+    /************    (contacto.html) desktop     *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************        Comienzo FOOTER         *************/
+    /************            desktop             *************/
+    /*********************************************************/
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 6.5rem;
+        background-color: #ff5174;
+    }
+
+    .texto-copyright {
+        display: block;
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+
+    }
+
+    .texto-seguinos {
+        display: block;
+        margin-left: 500px;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+    }
+
+    .redes {
+        /*justify-content: center;*/
+        height: 15px;
+        display: flex;
+        background-color: #ff5174;
+    }
+
+    .icon-redes {
+        margin-left: 0.5rem;
+    }
+
+    footer p a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    .link-servicios:hover {
+        color: #fff;
+
+    }
+
+}

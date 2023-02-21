@@ -264,13 +264,19 @@ nav {
 
 .container-quienes {
     /*margin: arriba y abajo - izq y derecha*/
-    padding: 3rem;
-
-    /*64 px*/
+    padding: 0.1rem;
+    
     background-color: #10e47a;
-    text-align: left;
 
 }
+
+.quienes-somos{
+    
+    text-align: left;
+    
+}
+
+
 
 .h2-quienes {
 
@@ -283,7 +289,7 @@ nav {
 }
 
 .h3-nombre {
-    margin-top: 1.875rem;
+    margin-top: 4rem;
     font-weight: bold;
 }
 
@@ -295,6 +301,7 @@ nav {
 }
 
 #container-nosotros {
+    background-color: #10e47a;
     display: flex;
     flex-direction: column;
     /*justify-items: center; va solo en grid*/
@@ -325,7 +332,7 @@ nav {
 }
 
 .text-present2 {
-    margin-bottom: 1.875rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -369,15 +376,17 @@ nav {
     margin-bottom: 1.875rem;
 }
 
-#container-empresas { /*mobile*/
-     /*antes estaba en 100% y daba problemas*/
-    height: 20rem;
-    background-color: #000;    
+#container-empresas {
+    /*mobile*/
+    /*antes estaba en 100% y daba problemas*/
+    height: auto;
+    background-color: #000;
     padding: 1.875rem;
 
 }
 
-#container-empresas h3 { /*mobile*/
+#container-empresas h3 {
+    /*mobile*/
     color: white;
     margin-top: 3rem;
     font-size: x-large;
@@ -389,21 +398,25 @@ nav {
     font-weight: bold;
 }
 
-#container-empresas .empresas-img { /*mobile*/
+#container-empresas .empresas-img {
+    /*mobile*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .empresas-img img {
-    margin: 0 1rem;
-    width: 60%; 
 
-    animation: scroll 15s linear infinite;
+    width: 50%;
+
+    /* animation: scroll 15s linear infinite;*/
 
 }
 
-@keyframes scroll {
+/*@keyframes scroll {
     0% {
         transform: translateX(-20);
     }
@@ -413,7 +426,7 @@ nav {
     }
 
 
-}
+}*/
 
 
 
@@ -642,17 +655,14 @@ footer p a {
 /*************            mobile           ******************/
 /************************************************************/
 
+/***********************    tablet   ******************/
+@media screen and (min-width: 768px)  {
 
-@media screen and (min-width: 1024px) {
-    /* cuando tenga menos de 599px va a estar blanco
-     cuando la pantalla tenga 600px o + se va reproducir de otra manera)*/
-
-
-    /* =============         DESKTOP             =========== */
+    /* =============         TABLET             =========== */
 
     /*********************************************************/
     /************     Comienzo HEADER Nav Bar    *************/
-    /************            desktop             *************/
+    /************            TABLET             *************/
     /*********************************************************/
 
 
@@ -665,7 +675,7 @@ footer p a {
     }
 
     nav {
-        background-color: black;
+        background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -690,7 +700,6 @@ footer p a {
         margin-bottom: 0.5rem;
         transition: 0.4s;
 
-
     }
 
     nav li a:hover {
@@ -710,6 +719,427 @@ footer p a {
 
     /***************************************************/
     /********     Fin     HEADER Nav Bar     ***********/
+    /********            tablet              ***********/
+    /***************************************************/
+
+
+    /*********************************************************/
+    /************     Comienzo     MAIN          *************/
+    /************            tablet              *************/
+    /*********************************************************/
+
+    /* :::::::::::::      HERO (tablet)     :::::::::::: */
+    .hero {
+
+        /*justify-content: center;*/
+        height: 30%;
+        padding: 10%;
+        text-align: center;
+        background-color: #ff5174;
+
+    }
+
+    .hero h1 {
+
+        font-size: 3.5rem;
+        margin-top: 4rem;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+
+    /* :::::::::   MISION (tablet) (index.html)  ::::::::: */
+
+    .container-mision {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding-top: 3rem;
+
+        /*64 px*/
+        background-color: #10e47a;
+        text-align: left;
+    }
+
+
+    .mision {
+        margin: 0 1.5rem;
+    }
+
+    .h2-mision {
+
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+
+    .text-mision {
+        margin-top: 1rem;
+        text-align: left;
+
+    }
+
+    .text-mision2 {
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-mision {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+
+
+    .container-vision {
+        background-color: #fff;
+
+    }
+
+
+    .vision {
+        margin: 0 1.5rem;
+    }
+
+    .h2-vision {
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 0.0625rem;
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+
+    .text-vision {
+
+        margin-top: 1rem;
+        text-align: left;
+        margin-bottom: 3rem;
+
+    }
+
+    .text-vision2 {
+
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-vision {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+    .container-valores {
+        background-color: #fff;
+
+    }
+
+
+    .valores {
+        margin: 0 1.5rem;
+    }
+
+    .h2-valores {
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 0.0625rem;
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+
+    .text-valores {
+
+        margin-top: 1rem;
+        text-align: left;
+
+    }
+
+    .text-valores {
+
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-valores {
+        display: none;
+
+    } 
+
+
+    /*********************************************************/
+    /************        Comienzo  GALERIA       *************/
+    /************    (proyectos.html)tablet    *************/
+    /*********************************************************/
+
+/*mismo que en mobile*/
+
+
+    /*********************************************************/
+    /************    Comienzo  QUIENES SOMOS     *************/
+    /************    (nosotros.html) tablet     *************/
+    /*********************************************************/
+
+
+
+    #container-nosotros {
+
+        /*justify-items: center; va solo en grid*/
+        background-color: #10e47a;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .h2-quienes {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .text-quienes {
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+
+    .text-quienes2 {
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+
+    .card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 50px;
+    }
+
+    .card .contenido .text-present1 {
+        margin-bottom: 30px;
+        text-align: left;
+        /*display: block;*/
+    }
+
+    .text-present2 {
+        margin-bottom: 50px;
+    }
+
+    /*********************************************************/
+    /************       Fin  QUIENES SOMOS       *************/
+    /************    (nosotros.html) tablet     *************/
+    /*********************************************************/
+
+
+    /*********************************************************/
+    /************       Comienzo  SERVICIOS      *************/
+    /************    (servicios.html) tablet    *************/
+    /*********************************************************/
+
+    #contenedor-service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        padding-top: 1.875rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contenedor-service .service-text {
+        margin-bottom: 1.875rem;
+        padding: 0.9375rem;
+        text-align: center;
+    }
+
+
+    .card-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    #service-item {
+        margin: 1.875rem 1rem;
+    }
+
+    #service-item p {
+        margin-bottom: 1.875rem;
+    }   
+
+    #container-empresas .empresas-img {
+        width: 100%;        
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+
+    #container-empresas h3 {
+        
+        color: white;
+        margin: 2rem 2rem;
+        font-size: x-large;
+        text-align: center;
+    }
+
+
+    .empresas-img img {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        /*animation: none;*/
+    }
+
+
+    /*********************************************************/
+    /************         Fin   SERVICIOS        *************/
+    /************    (servicios.html) tablet    *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************            Comienzo            *************/
+    /************    (contacto.html) tablet    *************/
+    /*********************************************************/
+
+    #contenedor-consultas {
+        display: block;
+        text-align: center;
+        padding-top: 4rem;
+
+    }
+
+    .h2-consultas {
+        font-size: 1rem;
+
+    }
+
+    .text-consultas {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-consultas-dos {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    /* ::::    Inicio  FORMULARIO (contacto.html)tablet  :::: */
+
+    /*mismo que en mobile*/
+
+    /* ::::    Fin  FORMULARIO (contacto.html) tablet    ::::*/
+
+
+    /*********************************************************/
+    /************               Fin              *************/
+    /************    (contacto.html) tablet      *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************        Comienzo FOOTER         *************/
+    /************            tablet              *************/
+    /*********************************************************/
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 6.5rem;
+        background-color: #ff5174;
+    }
+
+    .texto-copyright {
+        display: block;
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+
+    }
+
+    .texto-seguinos {
+        display: block;
+        
+        margin-left: 8rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+    }
+
+    .redes {
+        /*justify-content: center;*/
+        height: 15px;
+        display: flex;
+        background-color: #ff5174;
+    }
+
+    .icon-redes {
+        margin-left: 0.5rem;
+    }
+
+    footer p a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+
+}
+
+
+/***********************    desktop  ******************/
+@media screen and (min-width: 1024px) {
+    
+    /* =============         DESKTOP             =========== */
+
+    /*********************************************************/
+    /************     Comienzo HEADER Nav Bar    *************/
+    /************            desktop             *************/
+    /*********************************************************/
+
+
+    header {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    nav {
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+
+}
+
+    /***************************************************/
+    /********     Fin     HEADER Nav Bar     ***********/
     /********            desktop             ***********/
     /***************************************************/
 
@@ -722,6 +1152,7 @@ footer p a {
     /* :::::::::::::      HERO (desktop)     :::::::::::: */
     .hero {
         
+
         /*justify-content: center;*/
         height: 30%;
         padding: 10%;
@@ -735,44 +1166,10 @@ footer p a {
         font-size: 5rem;
         margin-top: 4rem;
         text-align: center;
-        font-weight: bold;
-
-        animation: aparecer-h1 3s infinite;
-        /*tmb se puede usar animation-name: mouse // animation-iteration-count: infinitive // animation-duration: 3s*/
-    }
-
-    @keyframes aparecer-h1 {
-        0% {
-            opacity: 0;
-
-        }
-
-        70% {
-            opacity: 0.5;
-        }
-
-        100% {
-            opacity: 1;
-        }
-
-    }
-
-    /* animation-duration: 3s;
-    animation-name: slidein;
+        font-weight: bold; 
     }
 
 
- @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 100%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }*/
 
 
 
@@ -801,7 +1198,7 @@ footer p a {
     }
 
     .mision {
-        margin: 3rem 33rem;
+        margin: 3rem 22rem;
     }
 
     .h2-mision {
@@ -831,8 +1228,8 @@ footer p a {
 
     .img-mision {
         grid-area: img-mision;
-        width: 100%;
-        height: 100%;
+        width: 77%;
+        
         display: flex;
         flex-direction: column;
     }
@@ -857,6 +1254,7 @@ footer p a {
 
     .vision {
         display: flex;
+        margin: 1rem;
 
     }
 
@@ -864,7 +1262,7 @@ footer p a {
         grid-area: h2-vision;
 
         margin-top: 13rem;
-        margin-left: 7rem;
+       
         text-align: center;
         font-weight: bold;
         font-size: 2.5rem;
@@ -873,15 +1271,17 @@ footer p a {
 
     .text-vision {
         grid-area: text-mision;
+        margin: 2rem;
         text-align: left;
-        margin: 13rem 15rem 0 10rem;
+        
     }
 
 
 
     .img-vision {
         grid-area: img-vision;
-        width: 100%;
+
+        width: 80%;
 
     }
 
@@ -890,10 +1290,11 @@ footer p a {
     .container-valores {
         background-color: #10e47a;
         display: grid;
-        grid-template-columns: 3fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "img-valores h2-valores text-valores";
+            "img-valores img valores h2-valores"
+            "img valores img valores text-valores";
     }
 
     .valores {
@@ -903,7 +1304,7 @@ footer p a {
 
     .h2-valores {
         grid-area: h2-valores;
-        margin: 13rem 3.125rem 0 7rem;
+        margin: 2rem 3.125rem 0 7rem;
         /*margin: arriba y abajo - izq y derecha*/
         font-weight: bold;
         text-align: center;
@@ -914,8 +1315,8 @@ footer p a {
 
     .text-valores {
         grid-area: text-valores;
-        width: 70%;
-        margin: 8rem;
+        width: 50%;
+        
         text-align: left;
     }
 
@@ -923,6 +1324,7 @@ footer p a {
     .img-valores {
         display: block;
         grid-area: img-valores;
+        width: 50%;
 
     }
 
@@ -933,6 +1335,7 @@ footer p a {
     /*********************************************************/
 
     .contenedor-imagenes {
+        width: 100%;
         padding: 1.25rem 0;
         border-radius: 3px;
         display: grid;
@@ -946,61 +1349,52 @@ footer p a {
 
         justify-items: center;
         align-items: center;
-        gap: 1.25rem;
+        
 
     }
 
     .imagen-1 {
         grid-area: imagen-1;
-        justify-self: right;
-        align-self: start;
+
     }
 
     .imagen-2 {
         grid-area: imagen-2;
-        justify-self: left;
-        align-self: start;
+
     }
 
     .imagen-3 {
         grid-area: imagen-3;
-        justify-self: right;
-        align-self: start;
+     
     }
 
     .imagen-4 {
         grid-area: imagen-4;
-        justify-self: left;
-        align-self: start;
+     
     }
 
     .imagen-5 {
         grid-area: imagen-5;
-        justify-self: right;
-        align-self: start;
+       
     }
 
     .imagen-6 {
         grid-area: imagen-6;
-        justify-self: left;
-        align-self: start;
+    
     }
 
 
-
-
     .contenedor-imagenes .imagen {
-        width: 650px;
+       width: 100%;
         position: relative;
-        height: 350px;
+        
         /*margin-bottom: 5px;*/
         /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
         /*blur de fondo*/
     }
 
     .imagen img {
-        width: 650px;
-        height: 350px;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -1048,12 +1442,6 @@ footer p a {
     }
 
 
-    .contenedor-proyecto div img {
-        width: 70rem;
-
-
-    }
-
 
 
 
@@ -1063,9 +1451,35 @@ footer p a {
     /*********************************************************/
 
     .container-quienes {
+        
         padding-top: 4.5rem;
         background-color: #10e47a;
     }
+    .quienes-somos {
+        margin: 3rem 22rem;
+    }
+
+    .h2-quienes {
+
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .text-quienes {
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+
+    .text-quienes2 {
+
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+ 
+
 
     #container-nosotros {
 
@@ -1099,46 +1513,16 @@ footer p a {
     }
 
 
-    .quienes-somos {
-
-        margin: 3rem 33rem;
-    }
-
-    .h2-quienes {
-
-        margin-top: 1rem;
-
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
-
-    .text-quienes {
-        margin-top: 2rem;
-        text-align: left;
-    }
-
-
-
-
-
-
-    .text-quienes2 {
-
-        text-align: left;
-        margin-bottom: 3.5rem;
-    }
-
-
     .card {
         width: 80%;
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding: 0 50px;
+        padding: 0 20px;
     }
 
     .card .contenido .text-present1 {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         text-align: left;
         /*display: block;*/
     }
@@ -1188,7 +1572,6 @@ footer p a {
         padding: 30px;
     }
 
-
     #service-item {
         margin: 1.875rem 6.25rem;
     }
@@ -1197,13 +1580,22 @@ footer p a {
         margin-bottom: 1.875rem;
     }
 
-    #container-empresas {
-        width: 100%; /*desktop*/
-        background-color: #000;           
 
+    /* Empresas que confiaron en nosotros*/
+
+    #container-empresas .empresas-img {
+        width: 100%;
+        /*desktop*/
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
     }
 
-    #container-empresas h3 { /*desktop*/
+    #container-empresas h3 {
+        /*desktop*/
         color: white;
         margin: 2rem 2rem;
         font-size: x-large;
@@ -1211,16 +1603,13 @@ footer p a {
     }
 
 
-    .empresas-img img{ /*desktop*/
+    .empresas-img img {
+        /*desktop*/
         width: 15%;
-        display: flex;  
-        animation: none;         
-        
+        display: flex;
+        justify-content: center;
+        /*animation: none;*/
     }
-
-
-
-
 
 
     /*********************************************************/
@@ -1259,7 +1648,9 @@ footer p a {
 
     /* ::::    Inicio  FORMULARIO (contacto.html) desktop  :::: */
     #contenedor-form {
-        margin: 6rem 30rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 12rem;
     }
 
 
@@ -1276,7 +1667,7 @@ footer p a {
     form .form-control {
         display: block;
         width: 100%;
-        padding: 7px 12px;
+        padding: 0.4375rem 0.75rem;
         font-size: 1rem;
         line-height: 1.5;
         color: #495057;
@@ -1296,7 +1687,7 @@ footer p a {
         width: 35%;
         display: inline-block;
         font-size: 15px;
-        padding: 12px 50px;
+        padding: 0.75rem 3.125rem;
         cursor: pointer;
         font-weight: bold;
         letter-spacing: 1px;
@@ -1378,5 +1769,7 @@ footer p a {
         color: #fff;
 
     }
+
+
 
 }

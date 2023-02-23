@@ -134,7 +134,6 @@ nav {
 .container-mision {
     /*margin: arriba y abajo - izq y derecha*/
     padding-top: 3rem;
-
     /*64 px*/
     background-color: #10e47a;
     text-align: left;
@@ -168,6 +167,7 @@ nav {
 .img-mision {
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -211,11 +211,13 @@ nav {
     display: flex;
     flex-direction: column;
 
+
 }
 
 /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
 .container-valores {
-    background-color: #fff;
+    background-color: #10e47a;
+    padding: 1rem;
 
 }
 
@@ -250,6 +252,19 @@ nav {
 
 }
 
+.valor-1{
+    padding-bottom: 1rem;
+}
+
+.valor-2{
+    padding-bottom: 1rem;
+}
+
+.valor-3{
+    padding-bottom: 1rem;
+}
+
+
 /*********************************************************/
 /*************          Fin MAIN        ******************/
 /*************           mobile         ******************/
@@ -264,16 +279,16 @@ nav {
 
 .container-quienes {
     /*margin: arriba y abajo - izq y derecha*/
-    padding: 0.1rem;
-    
+    padding: 3rem;
+
     background-color: #10e47a;
 
 }
 
-.quienes-somos{
-    
+.quienes-somos {
+
     text-align: left;
-    
+
 }
 
 
@@ -495,7 +510,8 @@ nav {
 }
 
 .contenedor-imagenes .imagen {
-    width: 80%
+    width: 80%;
+    position: relative;
         /*margin-bottom: 5px;*/
         /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
         /*blur de fondo*/
@@ -503,13 +519,70 @@ nav {
 
 .imagen img {
     width: 100%;
-
+    object-fit: cover; /*sacar si no va*/
 }
 
-.h4-proyecto {
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;   
+    background: #10e47a;
+    /*opacity: .93;*/
+    /*transparencia verde*/
+    width: 100%;     
+    height: 0;  
+    overflow: hidden;
+    transition: .6s ease-in-out;
     font-weight: bold;
-    text-align: center;
+     
 }
+
+.overlay h4 {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.p-proyecto {
+    color: #000;
+    font-weight: lighter;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -30%);
+    margin-top: 10px;
+    
+    
+
+
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************************************************/
 /*************          Fin GALERIA        ******************/
@@ -525,7 +598,7 @@ nav {
 #contenedor-consultas {
     display: block;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 4rem;
 
 }
 
@@ -535,12 +608,13 @@ nav {
 }
 
 .text-consultas {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     margin-bottom: 2rem;
 }
 
 .text-consultas-dos {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin:1rem;
 }
 
 
@@ -656,7 +730,7 @@ footer p a {
 /************************************************************/
 
 /***********************    tablet   ******************/
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
 
     /* =============         TABLET             =========== */
 
@@ -762,7 +836,7 @@ footer p a {
 
 
     .mision {
-        margin: 0 1.5rem;
+        margin: 0 3rem;
     }
 
     .h2-mision {
@@ -791,7 +865,7 @@ footer p a {
     }
 
 
-    /* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+    /* ::::::::::::: VISIÓN (index.html) (tablet) :::::::::::::::*/
 
 
     .container-vision {
@@ -800,8 +874,9 @@ footer p a {
     }
 
 
+
     .vision {
-        margin: 0 1.5rem;
+        margin: 0 3rem;
     }
 
     .h2-vision {
@@ -816,32 +891,36 @@ footer p a {
 
         margin-top: 1rem;
         text-align: left;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
 
     }
 
     .text-vision2 {
 
         text-align: left;
-        margin-bottom: 3.5rem;
+        margin-bottom: 4rem;
     }
 
     .img-vision {
 
         display: flex;
-        flex-direction: column;
+
+
+
+
 
     }
 
-    /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+    /* :::::::::   VALORES (tablet) (index.html)  ::::::::: */
     .container-valores {
-        background-color: #fff;
+        background-color: #10e47a;
+       
 
     }
 
 
     .valores {
-        margin: 0 1.5rem;
+        margin: 0 3rem;
     }
 
     .h2-valores {
@@ -868,7 +947,7 @@ footer p a {
     .img-valores {
         display: none;
 
-    } 
+    }
 
 
     /*********************************************************/
@@ -876,7 +955,114 @@ footer p a {
     /************    (proyectos.html)tablet    *************/
     /*********************************************************/
 
-/*mismo que en mobile*/
+    /*mismo que en mobile*/
+    .contenedor-imagenes {
+        
+        padding: 1.25rem 1.25rem;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (3) 1fr;
+
+        grid-template-areas:
+            "imagen-1 imagen-2"
+            "imagen-3 imagen-4"
+            "imagen-5 imagen-6";
+
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+    .imagen-1 {
+        grid-area: imagen-1;
+
+    }
+
+    .imagen-2 {
+        grid-area: imagen-2;
+
+    }
+
+    .imagen-3 {
+        grid-area: imagen-3;
+
+    }
+
+    .imagen-4 {
+        grid-area: imagen-4;
+
+    }
+
+    .imagen-5 {
+        grid-area: imagen-5;
+
+    }
+
+    .imagen-6 {
+        grid-area: imagen-6;
+
+    }
+
+
+    .contenedor-imagenes .imagen {
+        width: 100%;
+        position: relative;
+
+        /*margin-bottom: 5px;*/
+        /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
+        /*blur de fondo*/
+    }
+
+    .imagen img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #10e47a;
+        /*opacity: .93;*/
+        /*transparencia verde*/
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .6s ease-in-out;
+    }
+
+    .overlay h4 {
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .p-proyecto {
+        color: #000;
+        font-weight: lighter;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -30%);
+        margin-top: 10px;
+
+
+    }
+
+    .imagen:hover .overlay {
+        height: 100%;
+        cursor: pointer;
+    }
 
 
     /*********************************************************/
@@ -897,7 +1083,7 @@ footer p a {
 
     .h2-quienes {
         margin-top: 1rem;
-        font-size: 2.5rem;
+        font-size: 1.875rem;
         font-weight: bold;
     }
 
@@ -935,7 +1121,9 @@ footer p a {
     /************       Fin  QUIENES SOMOS       *************/
     /************    (nosotros.html) tablet     *************/
     /*********************************************************/
-
+    .quienes-somos {
+        margin: 2rem 4rem;
+    }
 
     /*********************************************************/
     /************       Comienzo  SERVICIOS      *************/
@@ -975,22 +1163,22 @@ footer p a {
 
     #service-item p {
         margin-bottom: 1.875rem;
-    }   
+    }
 
     #container-empresas .empresas-img {
-        width: 100%;        
+        width: 100%;
         background-color: #000;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-       
+
     }
 
 
 
     #container-empresas h3 {
-        
+
         color: white;
         margin: 2rem 2rem;
         font-size: x-large;
@@ -1045,6 +1233,16 @@ footer p a {
 
     /*mismo que en mobile*/
 
+    #contenedor-form {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 5rem;
+
+    }
+
+
+
+
     /* ::::    Fin  FORMULARIO (contacto.html) tablet    ::::*/
 
 
@@ -1072,7 +1270,7 @@ footer p a {
 
     .texto-copyright {
         display: block;
-        margin-left: 3rem;
+
         margin-top: 2rem;
         font-size: 0.9rem;
         background-color: #ff5174;
@@ -1082,7 +1280,7 @@ footer p a {
 
     .texto-seguinos {
         display: block;
-        
+
         margin-left: 8rem;
         font-size: 0.9rem;
         background-color: #ff5174;
@@ -1110,14 +1308,14 @@ footer p a {
 }
 
 
-/***********************    desktop  ******************/
+/***********************    desktop 1024 ******************/
 @media screen and (min-width: 1024px) {
-    
-    /* =============         DESKTOP             =========== */
+
+    /* =============         DESKTOP  1024           =========== */
 
     /*********************************************************/
     /************     Comienzo HEADER Nav Bar    *************/
-    /************            desktop             *************/
+    /************            desktop 1024            *************/
     /*********************************************************/
 
 
@@ -1136,7 +1334,633 @@ footer p a {
         align-items: center;
         padding: 3rem;
 
+    }
+
+    /***************************************************/
+    /********     Fin     HEADER Nav Bar     ***********/
+    /********            desktop  1024            ***********/
+    /***************************************************/
+
+
+    /*********************************************************/
+    /************     Comienzo     MAIN          *************/
+    /************            desktop 1024            *************/
+    /*********************************************************/
+
+    /* :::::::::::::      HERO (desktop 1024)     :::::::::::: */
+    .hero {
+
+
+        /*justify-content: center;*/
+        height: 30%;
+        padding: 10%;
+        text-align: center;
+        background-color: #ff5174;
+
+    }
+
+    .hero h1 {
+
+        font-size: 4rem;
+        margin-top: 4rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    /* :::::::::   MISION (desktop 1024) (index.html)  ::::::::: */
+
+
+
+    .container-mision {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding-top: 3.5rem;
+
+        /*64 px*/
+        background-color: #10e47a;
+
+
+
+    }
+
+    .mision {
+        margin: 0 15rem 2rem 15rem;
+    }
+
+    .h2-mision {
+        
+
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+
+    .text-mision {
+        
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 0.9375rem;
+
+    }
+
+
+    .text-mision2 {
+        
+        text-align: left;
+        margin-bottom: 3.5rem;
+        font-size: 0.9375rem;
+    }
+
+
+    .img-mision {
+        
+        width: 100%;
+    }
+
+    /* :::::::::   VISION (desktop 1024) (index.html)  ::::::::: */
+
+
+    .container-vision {
+        display: flex;
+    }
+
+
+    .container-vision {
+        background-color: #fff;
+
+
+    }
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .h2-vision {
+
+
+        margin-top: 5rem;
+
+        
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+
+    .text-vision {
+
+        margin: 0.9375rem;
+        text-align: left;
+
+    }
+
+
+
+    .img-vision {
+
+        width: 80%;
+
+    }
+
+    /* :::::::::   VALORES (desktop 1024) (index.html)  ::::::::: */
+
+    .container-valores {
+        background-color: #10e47a;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            "img-valores h2-valores"
+            "img-valores text-valores";
+
+
+    }
+
+
+
+    .valores {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .h2-valores {
+        grid-area: h2-valores;
+
+        /*margin: arriba y abajo - izq y derecha*/
+        font-weight: bold;
+        text-align: left;
+        font-size: 2rem;
+
+
+    }
+
+    .text-valores {
+        grid-area: text-valores;
+
+
+        text-align: left;
+    }
+
+
+    .img-valores {
+        grid-area: img-valores;
+        display: block;
+
+        width: 50%;
+
+    }
+
+
+    /*********************************************************/
+    /************        Comienzo  GALERIA       *************/
+    /************    (proyectos.html) desktop 1024   *************/
+    /*********************************************************/
+
+    .contenedor-imagenes {
+        padding: 1.25rem 1.25rem;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (3) 1fr;
+
+        grid-template-areas:
+            "imagen-1 imagen-2"
+            "imagen-3 imagen-4"
+            "imagen-5 imagen-6";
+
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+    .imagen-1 {
+        grid-area: imagen-1;
+
+    }
+
+    .imagen-2 {
+        grid-area: imagen-2;
+
+    }
+
+    .imagen-3 {
+        grid-area: imagen-3;
+
+    }
+
+    .imagen-4 {
+        grid-area: imagen-4;
+
+    }
+
+    .imagen-5 {
+        grid-area: imagen-5;
+
+    }
+
+    .imagen-6 {
+        grid-area: imagen-6;
+
+    }
+
+
+    .contenedor-imagenes .imagen {
+        width: 100%;
+        position: relative;
+
+        /*margin-bottom: 5px;*/
+        /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
+        /*blur de fondo*/
+    }
+
+    .imagen img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #10e47a;
+        /*opacity: .93;*/
+        /*transparencia verde*/
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .6s ease-in-out;
+    }
+
+    .overlay h4 {
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .p-proyecto {
+        color: #000;
+        font-weight: lighter;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -30%);
+        margin-top: 10px;
+
+
+    }
+
+    .imagen:hover .overlay {
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+
+
+
+    /*********************************************************/
+    /************    Comienzo  QUIENES SOMOS     *************/
+    /************    (nosotros.html) desktop 1024     *************/
+    /*********************************************************/
+
+    .container-quienes {
+
+       
+        background-color: #10e47a;
+    }
+
+    .quienes-somos {
+        margin: 0 15rem;
+    }
+
+    .h2-quienes {
+
+        margin-top: 1rem;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .text-quienes {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 0.9375rem;
+    }
+
+
+    .text-quienes2 {
+
+        text-align: left;
+        margin-bottom: 3.5rem;
+        font-size: 0.9375rem;
+    }
+
+
+
+
+    #container-nosotros {
+
+        /*justify-items: center; va solo en grid*/
+        background-color: #10e47a;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas:
+            "nosotros-1 nosotros-2 nosotros-3";
+
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .nosotros-1 {
+        grid-area: nosotros-1;
+
+    }
+
+    .nosotros-2 {
+        grid-area: nosotros-2;
+
+    }
+
+    .nosotros-3 {
+        grid-area: nosotros-3;
+
+    }
+
+
+    .card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .card .contenido .text-present1 {
+        margin-bottom: 10px;
+        text-align: left;
+        /*display: block;*/
+    }
+
+    .text-present2 {
+        margin-bottom: 50px;
+    }
+
+    /*********************************************************/
+    /************       Fin  QUIENES SOMOS       *************/
+    /************    (nosotros.html) desktop 1024    *************/
+    /*********************************************************/
+
+
+    /*********************************************************/
+    /************       Comienzo  SERVICIOS      *************/
+    /************    (servicios.html) desktop 1024   *************/
+    /*********************************************************/
+
+    /*igual que en mobile y tablet*/
+
+    /* Empresas que confiaron en nosotros*/
+
+    #container-empresas .empresas-img {
+        width: 100%;
+        /*desktop*/
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #container-empresas h3 {
+        /*desktop*/
+        color: white;
+        margin: 2rem 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+
+    .empresas-img img {
+        /*desktop*/
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        /*animation: none;*/
+    }
+
+
+    /*********************************************************/
+    /************         Fin   SERVICIOS        *************/
+    /************    (servicios.html) desktop 1024   *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************            Comienzo            *************/
+    /************    (contacto.html) desktop 1024    *************/
+    /*********************************************************/
+
+    #contenedor-consultas {
+        display: block;
+        text-align: center;
+        padding-top: 8rem;
+
+    }
+
+    .h2-consultas {
+        font-size: 1rem;
+
+    }
+
+    .text-consultas {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .text-consultas-dos {
+        font-size: 1.5rem;
+    }
+
+    /* ::::    Inicio  FORMULARIO (contacto.html) desktop 1024  :::: */
+    #contenedor-form {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 12rem;
+    }
+
+
+    form label {
+        display: block;
+        margin-bottom: 0.625rem;
+        font-weight: bold;
+    }
+
+    form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    form .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.4375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #ededed;
+        border: 2px solid #ededed;
+
+    }
+
+    textarea:focus,
+    input:focus,
+    input[type]:focus {
+        border-color: #ff5174;
+        outline: 0 none;
+    }
+
+    .boton {
+        width: 35%;
+        display: inline-block;
+        font-size: 15px;
+        padding: 0.75rem 3.125rem;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /*border-radius: 4px;*/
+        background: #10e47a;
+        border: 2px solid #10e47a;
+    }
+
+    .boton:hover {
+        /*box-shadow: 5px 5px 10px rgb(212, 212, 212);*/
+        border: 2px solid;
+        background-color: #fff;
+        /* color: #10e47a;*/
+
+    }
+
+    /* ::::    Fin  FORMULARIO (contacto.html) desktop 1024    ::::*/
+
+
+    /*********************************************************/
+    /************               Fin              *************/
+    /************    (contacto.html) desktop 1024     *************/
+    /*********************************************************/
+
+
+
+
+    /*********************************************************/
+    /************        Comienzo FOOTER         *************/
+    /************            desktop 1024            *************/
+    /*********************************************************/
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 6.5rem;
+        background-color: #ff5174;
+        padding: 1rem 1rem 1rem 1rem;
+
+    }
+
+    .texto-copyright {
+        display: block;
+
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+
+    }
+
+    .texto-seguinos {
+        display: block;
+        margin-left: 500px;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        background-color: #ff5174;
+
+    }
+
+    .redes {
+        /*justify-content: center;*/
+        height: 30px;
+        display: flex;
+        background-color: #ff5174;
+    }
+
+    .icon-redes {
+        margin-left: 0.5rem;
+    }
+
+    footer p a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    .link-servicios:hover {
+        color: #fff;
+
+    }
+
+
+
 }
+
+/*desktop 1200*/
+@media screen and (min-width: 1200px) {
+
+    /* =============         DESKTOP             =========== */
+
+    /*********************************************************/
+    /************     Comienzo HEADER Nav Bar    *************/
+    /************            desktop             *************/
+    /*********************************************************/
+
+
+    header {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    nav {
+        background-color: rgb(128, 0, 122);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+
+    }
 
     /***************************************************/
     /********     Fin     HEADER Nav Bar     ***********/
@@ -1151,7 +1975,7 @@ footer p a {
 
     /* :::::::::::::      HERO (desktop)     :::::::::::: */
     .hero {
-        
+
 
         /*justify-content: center;*/
         height: 30%;
@@ -1166,7 +1990,7 @@ footer p a {
         font-size: 5rem;
         margin-top: 4rem;
         text-align: center;
-        font-weight: bold; 
+        font-weight: bold;
     }
 
 
@@ -1185,15 +2009,7 @@ footer p a {
         background-color: #10e47a;
         text-align: left;
 
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
 
-        grid-template-areas:
-            "h2-mision"
-            "text-mision"
-            "text-mision2"
-            "img-mision";
 
     }
 
@@ -1202,16 +2018,16 @@ footer p a {
     }
 
     .h2-mision {
-        grid-area: h2-mision;
+        
         align-items: center;
         margin-top: 1rem;
         margin-left: 0.0625rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
     .text-mision {
-        grid-area: text-mision;
+        
         margin-top: 2rem;
         text-align: left;
 
@@ -1220,18 +2036,18 @@ footer p a {
 
 
     .text-mision2 {
-        grid-area: text-mision2;
+        
         text-align: left;
         margin-bottom: 3.5rem;
     }
 
 
     .img-mision {
-        grid-area: img-mision;
-        width: 77%;
         
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+
+
+
     }
 
     /* :::::::::   VISION (desktop) (index.html)  ::::::::: */
@@ -1261,27 +2077,34 @@ footer p a {
     .h2-vision {
         grid-area: h2-vision;
 
-        margin-top: 13rem;
-       
-        text-align: center;
+        margin-top: 5rem;
+        margin-left: 10rem;
+
+
+        text-align: left;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
     .text-vision {
         grid-area: text-mision;
-        margin: 2rem;
         text-align: left;
-        
+        margin-left: 10rem;
+        margin-right: 10rem;
+
     }
 
 
 
     .img-vision {
         grid-area: img-vision;
+        display: flex;
+        flex-direction: row;
 
-        width: 80%;
+
+
+
 
     }
 
@@ -1289,43 +2112,31 @@ footer p a {
 
     .container-valores {
         background-color: #10e47a;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "img-valores img valores h2-valores"
-            "img valores img valores text-valores";
+
     }
 
     .valores {
         display: flex;
-        margin: 0;
+        margin-left: 3rem;
+        margin-right: 10rem;
     }
 
     .h2-valores {
-        grid-area: h2-valores;
-        margin: 2rem 3.125rem 0 7rem;
-        /*margin: arriba y abajo - izq y derecha*/
+
         font-weight: bold;
-        text-align: center;
-        font-size: 2.5rem;
+        text-align: left;
+        font-size: 2rem;
 
 
     }
 
     .text-valores {
-        grid-area: text-valores;
-        width: 50%;
-        
         text-align: left;
     }
 
 
     .img-valores {
-        display: block;
-        grid-area: img-valores;
         width: 50%;
-
     }
 
 
@@ -1335,8 +2146,8 @@ footer p a {
     /*********************************************************/
 
     .contenedor-imagenes {
-        width: 100%;
-        padding: 1.25rem 0;
+        
+        
         border-radius: 3px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1349,7 +2160,7 @@ footer p a {
 
         justify-items: center;
         align-items: center;
-        
+
 
     }
 
@@ -1365,29 +2176,29 @@ footer p a {
 
     .imagen-3 {
         grid-area: imagen-3;
-     
+
     }
 
     .imagen-4 {
         grid-area: imagen-4;
-     
+
     }
 
     .imagen-5 {
         grid-area: imagen-5;
-       
+
     }
 
     .imagen-6 {
         grid-area: imagen-6;
-    
+
     }
 
 
     .contenedor-imagenes .imagen {
-       width: 100%;
+        width: 80%;
         position: relative;
-        
+
         /*margin-bottom: 5px;*/
         /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)*/
         /*blur de fondo*/
@@ -1414,7 +2225,7 @@ footer p a {
     .overlay h4 {
         color: #000;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1425,13 +2236,14 @@ footer p a {
     .p-proyecto {
         color: #000;
         font-weight: lighter;
-        font-size: 16px;
+        font-size: 15px;
         text-transform: uppercase;
         position: absolute;
         top: 60%;
         left: 50%;
         text-align: center;
         transform: translate(-50%, -30%);
+        margin-top: 5px;
 
 
     }
@@ -1451,10 +2263,11 @@ footer p a {
     /*********************************************************/
 
     .container-quienes {
-        
+
         padding-top: 4.5rem;
         background-color: #10e47a;
     }
+
     .quienes-somos {
         margin: 3rem 22rem;
     }
@@ -1462,7 +2275,7 @@ footer p a {
     .h2-quienes {
 
         margin-top: 1rem;
-        font-size: 2.5rem;
+        font-size: 32px;
         font-weight: bold;
     }
 
@@ -1478,7 +2291,7 @@ footer p a {
         margin-bottom: 3.5rem;
     }
 
- 
+
 
 
     #container-nosotros {
@@ -1543,13 +2356,15 @@ footer p a {
     /*********************************************************/
 
     #contenedor-service {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-        text-align: left;
-        justify-content: space-between;
     }
 
     #contenedor-service .cards {
-        width: 50%;
+        width: 80%;
         padding-top: 1.875rem;
         display: flex;
         flex-direction: column;
@@ -1569,16 +2384,14 @@ footer p a {
     .card-service {
         display: flex;
         justify-content: left;
-        padding: 30px;
+        padding: 2rem;
     }
 
-    #service-item {
-        margin: 1.875rem 6.25rem;
+    .column{
+        width: 60%;
     }
 
-    #service-item p {
-        margin-bottom: 1.875rem;
-    }
+
 
 
     /* Empresas que confiaron en nosotros*/
@@ -1591,7 +2404,7 @@ footer p a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-       
+
     }
 
     #container-empresas h3 {
@@ -1650,7 +2463,7 @@ footer p a {
     #contenedor-form {
         display: flex;
         flex-direction: column;
-        margin: 1rem 12rem;
+        margin: 1rem 30rem;
     }
 
 
@@ -1719,57 +2532,11 @@ footer p a {
     /************        Comienzo FOOTER         *************/
     /************            desktop             *************/
     /*********************************************************/
+    /*mismo que en desktop 1024*/
 
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 6.5rem;
-        background-color: #ff5174;
-    }
-
-    .texto-copyright {
-        display: block;
-        margin-left: 3rem;
-        margin-top: 2rem;
-        font-size: 0.9rem;
-        background-color: #ff5174;
-
-
-    }
-
-    .texto-seguinos {
-        display: block;
-        margin-left: 500px;
-        margin-right: 1rem;
-        font-size: 0.9rem;
-        background-color: #ff5174;
-
-    }
-
-    .redes {
-        /*justify-content: center;*/
-        height: 15px;
-        display: flex;
-        background-color: #ff5174;
-    }
-
-    .icon-redes {
-        margin-left: 0.5rem;
-    }
-
-    footer p a {
-        text-decoration: none;
-        color: #000;
-
-    }
-
-    .link-servicios:hover {
-        color: #fff;
-
-    }
-
-
+    /*********************************************************/
+    /************        Fin FOOTER         *************/
+    /************            desktop             *************/
+    /*********************************************************/
 
 }

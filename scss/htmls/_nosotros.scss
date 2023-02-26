@@ -1,0 +1,79 @@
+// estilos de nosotros
+
+@import "../base/variables";
+@import "../base/mixin";
+
+/**/
+/********************************************************/
+/************   Comienzo  QUIENES SOMOS  ****************/
+/************   (nosotros.html) mobile  *****************/
+/********************************************************/
+
+.main-nosotros{
+    .container-quienes {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding: 3rem;    
+        background-color: $color-verde;    
+    }
+    
+    .quienes-somos {    
+        text-align: left;    
+    }
+       
+    
+    .h2-quienes {    
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 1px;
+        font-size: 1.875rem;
+        font-weight: bold;
+    
+    }
+    
+    .h3-nombre {
+        margin-top: 4rem;
+        font-weight: bold;
+    }
+      
+    
+    .text-quienes {
+        margin-top: 1rem;
+        text-align: left;
+    }
+    
+    #container-nosotros {
+        background-color: $color-verde;
+        /*display: flex;
+        flex-direction: column;*/
+        @include flex-col;
+        /*justify-items: center; va solo en grid*/
+    
+        z-index: 999;
+    }
+    
+    .card {
+        width: 100%;
+        border: none;
+        background-color: $color-verde;
+    }
+    
+    .card .contenido .text-present1 {
+        margin-bottom: 1.875rem;
+        text-align: left;
+        display: block;
+    }
+    
+    .contenido {
+        background-color: $color-verde;
+        margin: 0 1.5rem;
+    
+    }
+    
+    .text-present1 {
+        font-weight: bold;
+    }
+    
+    .text-present2 {
+        margin-bottom: 4rem;
+    }
+}

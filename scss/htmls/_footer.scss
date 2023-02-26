@@ -1,0 +1,93 @@
+//estilos de footer
+@import "../base/variables";
+@import "../base/mixin";
+
+/* ==========          MOBILE FIRST           ==============*/
+/**/
+/**********************************************************/
+/*************       Comienzo FOOTER      *****************/
+/*************            mobile          *****************/
+/**********************************************************/
+
+.footer {
+    @include flex-col-cen-cen;
+    height: $altura-footer; //6.5rem
+    background-color: $color-salmon;
+}
+
+.texto-copyright {
+   font-size: $fuente-p-m; //1rem    
+    text-align: center;
+    background-color: $color-salmon;
+}
+
+
+.redes {
+    display: none;
+}
+
+
+footer p a {
+    text-decoration: none;
+    color: $color-negro;
+
+}
+
+.link-servicios:active {
+    color: $color-blanco;
+
+}
+
+/************************************************************/
+/*************          Fin FOOTER         ******************/
+/*************            mobile           ******************/
+/************************************************************/
+/**/
+/**/
+/*********************************************************/
+/************        Comienzo FOOTER         *************/
+/************            tablet              *************/
+/*********************************************************/
+@include tablet {
+    .footer {
+        @include flex-row-cen-cen;
+        height: $altura-footer; //6.5rem
+        background-color: $color-salmon;
+
+        p {
+            a {
+                text-decoration: none;
+                color: $color-negro;
+            }
+        }
+    }
+
+    .texto-copyright {
+        display: block;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        background-color: $color-salmon;
+
+
+    }
+
+    .texto-seguinos {
+        display: block;
+        margin-left: 8rem;
+        font-size: 0.9rem;
+        background-color: $color-salmon;
+
+    }
+
+    .redes {
+        /*justify-content: center;*/
+        height: 15px;
+        display: flex;
+        background-color: $color-salmon;
+    }
+
+    .icon-redes {
+        margin-left: 0.5rem;
+    }
+
+}

@@ -1,0 +1,41 @@
+// Paleta de colores
+$color-verde: #10e47a;
+$color-salmon:  #ff5174;
+$color-negro: #0c0a0a;
+$color-blanco: #fff7f7;
+
+//Tamaños de fuentes
+$fuente-h1-chica: 3rem; //48px
+$fuente-h1-alta: 3.5rem; //56px
+$fuente-h1-mediana: 4rem; //64px
+$fuente-h1-grande: 5rem; //80px
+
+//Mision, Vision, Valores, Servicios, 
+$fuente-h2-mobile-tablet: 1.875rem; //30px
+$fuente-h3-mobile-tablet: 1.5625rem; //25px
+$fuente-h4-mobile-tablet: 1rem; //16px
+$fuente-p-mobile-tablet: 0.8125rem; //13px
+$fuente-p-b-t-d-2: 0.9375rem; //15px
+
+
+$fuente-h2-desktops: 2rem; //32px
+//h3 no hay porque hereda propiedad mobile y tablet
+$fuente-h4-desktops: 1.25rem; //20px
+$fuente-p-chica-desktops: 0.8125rem; //13px
+$fuente-p-alta-desktops: 0.9375rem;  //15px
+
+//formulario
+$fuente-p-m-t-d: 1rem;  //16px
+$fuente-b-m-t-d: 0.9375rem; //15px
+
+//footer
+$fuente-p-m: 1rem; //16px
+$fuente-p-t-ds: 0.9rem; //14.4px
+$altura-footer: 6.5rem;  //104px
+
+//media queries
+$tablet: 768px;
+$desktop-1024: 1024px;
+$desktop-1200: 1200px;
+
+

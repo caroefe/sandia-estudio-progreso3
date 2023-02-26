@@ -1,0 +1,164 @@
+@import "../base/variables";
+
+
+// estilos de index
+.hero {
+    padding: 10%;
+    text-align: center;
+    background-color: $color-salmon;
+
+    h1 {
+        margin-top: 6rem;
+        margin-bottom: 0.8rem;
+        font-size: $fuente-h1-chica;
+        text-align: center;
+        font-weight: bold;
+        animation: aparecer-h1 3s infinite;
+    }
+
+
+    @keyframes aparecer-h1 {
+        0% {
+            opacity: 0;
+
+        }
+
+        70% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+}
+
+/* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
+.main-index {
+
+    .container-mision {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding-top: 3rem;
+        /*64 px*/
+        background-color: $color-verde;
+        text-align: left;
+    }
+
+    .mision {
+        margin: 0 1.5rem;
+    }
+
+    .h2-mision {
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: $fuente-h2-mobile-tablet;
+        font-weight: bold;
+    }
+
+    .text-mision {
+        margin-top: 1rem;
+        text-align: left;
+
+    }
+
+    .text-mision2 {
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-mision {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+.main-index {
+    .container-vision {
+        background-color: $color-blanco;
+    }
+
+    .vision {
+        margin: 0 1.5rem;
+    }
+
+    .h2-vision {
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 0.0625rem;
+        font-size: $fuente-h2-mobile-tablet;
+        font-weight: bold;
+    }
+
+    .text-vision {
+        margin-top: 1rem;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .text-vision2 {
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-vision {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+ /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+.main-index {
+   
+    .container-valores {
+        background-color: $color-verde;
+        padding: 1rem;
+    }
+
+    .valores {
+        margin: 0 1.5rem;
+    }
+
+    .h2-valores {
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 0.0625rem;
+        font-size: $fuente-h2-mobile-tablet;
+        font-weight: bold;
+    }
+
+    .text-valores {
+        margin-top: 1rem;
+        text-align: left;
+
+    }
+
+    .text-valores {
+        text-align: left;
+        margin-bottom: 3.5rem;
+    }
+
+    .img-valores {
+        display: none;
+    }
+
+    .valor-1 {
+        padding-bottom: 1rem;
+    }
+
+    .valor-2 {
+        padding-bottom: 1rem;
+    }
+
+    .valor-3 {
+        padding-bottom: 1rem;
+    }
+}
+
+/*********************************************************/
+/*************          Fin MAIN        ******************/
+/*************           mobile         ******************/
+/*********************************************************/

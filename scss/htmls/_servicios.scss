@@ -1,1 +1,253 @@
-// estilos de servicios
+@import "../base/variables";
+@import "../base/mixin";
+
+//terminado
+// estilos de servicios.html
+
+/***********************************************************/
+/*************     Comienzo SERVICIOS    *******************/
+/*************  (servicios.html) mobile  *******************/
+/***********************************************************/
+.main-servicios {
+
+    .contenedor-service {
+        @include flex-col;
+
+        .cards {
+            padding-top: 1.875rem;
+            @include flex-col;
+
+            .column {
+                .card-service {
+                    @include flex-col-cen;
+
+                    .service-text {
+                        margin-bottom: 1.875rem;
+                        padding: 0.9375rem;
+                        text-align: center;
+
+                        .h3-servicios {
+                            font-weight: bold;
+                            font-size: $fuente-h3-serv; //25px
+
+                            p {
+                                margin-bottom: 1.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    .container-empresas {
+        height: auto;
+        background-color: $color-negro;
+        padding: 1.875rem;
+
+        h3 {
+            color: $color-blanco;
+            margin-top: 3rem;
+            font-size: $fuente-h3-serv; //25px
+            text-align: center;
+            
+        }
+
+        .empresas-img {
+            @include flex-col-cen-cen;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+/***********************************************************/
+/*************       Fin SERVICIOS       *******************/
+/*************  (servicios.html) mobile  *******************/
+/***********************************************************/
+/**/
+/**/
+/*********************************************************/
+/************       Comienzo  SERVICIOS      *************/
+/************    (servicios.html) tablet    *************/
+/*********************************************************/
+@media screen and (min-width:768px) {
+    .main-servicios {
+        .contenedor-service {
+            @include flex-col;
+
+            .cards {
+                padding-top: 1.875rem;
+                @include flex-col;
+
+                .column {
+                    .card-service {
+                        @include flex-col-cen;
+
+                        .service-text {
+                            margin-bottom: 1.875rem;
+                            padding: 0.9375rem;
+                            text-align: center;
+
+                            .h3-servicios {
+                                font-weight: bold;
+                                font-size: $fuente-h3-serv; //25px
+
+                                p {
+                                    margin-bottom: 1.875rem; //30px
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .container-empresas {
+            height: auto;
+            background-color: $color-negro;
+            padding: 1.875rem;
+
+            h3 {
+                color: $color-blanco;
+                margin: 2rem 2rem;
+                font-size: $fuente-h3-serv; //25px
+                text-align: center;
+            }
+
+            .empresas-img {
+                @include flex-row-cen-cen;
+                width: 100%;
+                background-color: $color-negro;
+
+                img {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+}
+
+/*************************************************************/
+/************         Fin SERVICIOS              *************/
+/************    (servicios.html) tablet         *************/
+/*************************************************************/
+/**/
+/**/
+/*************************************************************/
+/************       Comienzo  SERVICIOS          *************/
+/************    (servicios.html) desktop 1024   *************/
+/*************************************************************/
+
+/*igual que en mobile y tablet*/
+
+/* Empresas que confiaron en nosotros*/
+
+@media screen and (min-width:1024px) {
+
+    .main-servicios {
+        .container-empresas {
+            height: auto;
+            background-color: $color-negro;
+            padding: 1.875rem;
+
+            h3 {
+                color: $color-blanco;
+                margin: 2rem 2rem;
+                font-size: $fuente-h3-serv; //25px
+                text-align: center;
+            }
+
+            .empresas-img {
+                @include flex-row-cen-cen;
+                width: 100%;
+                background-color: $color-negro;
+
+                img {
+                    width: 15%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        }
+
+}
+
+/*************************************************************/
+/************         Fin SERVICIOS              *************/
+/************    (servicios.html) desktop 1024   *************/
+/*************************************************************/
+/**/
+/**/
+/*************************************************************/
+/************         Fin SERVICIOS              *************/
+/************    (servicios.html) desktop 1200   *************/
+/*************************************************************/
+@media screen and (min-width:1200px) {
+    .main-servicios {
+        .contenedor-service {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            .cards {
+                width: 80%;
+                padding-top: 1.875rem;
+                @include flex-col-cen;
+
+                .column {
+                    display: flex;
+                    width: 60%;
+
+                    .card-service {
+                        display: flex;
+                        justify-content: left;
+                        padding: 2rem;                        
+                    }
+                }
+            }
+        }
+
+
+        .container-empresas {           
+
+            h3 {
+                color: $color-blanco;
+                margin: 2rem 2rem;
+                font-size: $fuente-h3-serv; //25px
+                text-align: center;
+            }
+
+            .empresas-img {
+                @include flex-row-cen-cen;
+                width: 100%;
+                background-color: $color-negro;
+
+                img {
+                    width: 15%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+}
+/*************************************************************/
+/************         Fin SERVICIOS              *************/
+/************    (servicios.html) desktop 1200   *************/
+/*************************************************************/
+/**/

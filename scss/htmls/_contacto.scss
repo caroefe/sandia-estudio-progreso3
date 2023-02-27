@@ -1,1 +1,386 @@
-// estilos de contacto
+// estilos de contacto.html
+
+@import "../base/variables";
+@import "../base/mixin";
+
+
+/**/
+/********************************************************/
+/************   Comienzo  CONTACTO       ****************/
+/************   (contacto.html) mobile  *****************/
+/********************************************************/
+.main-contacto {
+    .contenedor-consultas {
+        display: block;
+        text-align: center;
+        padding-top: 4rem;
+
+        .consultas {
+
+            .h2-consultas {
+                font-size: $fuente-p-m-t-d; //16px
+            }
+
+            .text-consultas {
+                font-size: $fuente-p-form; //30px
+                margin-bottom: 2rem;
+            }
+
+            .text-consultas-dos {
+                font-size: $fuente-p-2-form; //20px
+                margin: 1rem;
+
+            }
+
+        }
+
+    }
+
+
+    .contenedor-form {
+        @include flex-col;
+        margin: 1rem 1rem;
+
+        .container-form {
+            form {
+                label {
+                    display: block;
+                    margin-bottom: 0.625rem; //10px
+                    font-weight: bold;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 1rem; //16px
+
+                textarea {
+                    &:focus {
+                        border-color: $color-salmon;
+                        outline: 0 none;
+                    }
+                }
+
+                input {
+                    &:focus {
+                        border-color: $color-salmon;
+                        outline: 0 none;
+                    }
+                }
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 0.4375rem 0.75rem; //7px 12px
+                font-size: $fuente-p-m-t-d; //1rem
+                line-height: 1.5;
+                color: $color-negro;
+                background-color: $color-gris-form;
+                border: 2px solid $color-gris-form;
+            }
+
+            .boton {
+                width: 100%;
+                display: inline-block;
+                font-size: 0.9375rem;
+                height: 3.5rem;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 1px;
+                /*border-radius: 4px;*/
+                background: $color-verde;
+                border: 2px solid $color-verde;
+
+                &:active {
+                    border: 2px solid;
+                    background-color: $color-blanco;
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+/********************************************************/
+/************   Fin  CONTACTO       ****************/
+/************   (contacto.html) mobile  *****************/
+/********************************************************/
+/**/
+/**/
+/********************************************************/
+/************   Comienzo  CONTACTO       ****************/
+/************   (contacto.html) tablet  *****************/
+/********************************************************/
+@media screen and (min-width:768px) {
+.main-contacto {
+    .contenedor-consultas {
+        display: block;
+        text-align: center;
+        padding-top: 4rem;
+
+        .consultas {
+
+            .h2-consultas {
+                font-size: $fuente-p-m-t-d; //16px
+            }
+
+            .text-consultas {
+                font-size: $fuente-p-3-form; //2rem
+                margin-bottom: 1rem;
+            }
+
+            .text-consultas-dos {
+                font-size: $fuente-p-2-form; //24px
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+
+    .contenedor-form {
+        @include flex-col;
+        margin: 5rem 5rem; 
+
+ /*mismo que en mobile*/
+
+    }
+
+}
+}
+
+
+/********************************************************/
+/************   Fin  CONTACTO       ****************/
+/************   (contacto.html) tablet  *****************/
+/********************************************************/
+/**/
+/**/
+/********************************************************/
+/************   Comienzo  CONTACTO       ****************/
+/************   (contacto.html) desktop 1024 *****************/
+/********************************************************/
+@media screen and (min-width:1024px) {
+    .main-contacto {
+        .contenedor-consultas {
+            display: block;
+            text-align: center;
+            padding-top: 8rem;
+    
+            .consultas {
+    
+                .h2-consultas {
+                    font-size: $fuente-p-m-t-d; //16px
+                }
+    
+                .text-consultas {
+                    font-size: $fuente-p-4-form; //40px
+                    margin-bottom: 2rem;
+                }
+    
+                .text-consultas-dos {
+                    font-size: $fuente-p-1-form; //24px
+                   
+                }
+    
+            }
+    
+        }
+    
+    
+        .contenedor-form {
+            @include flex-col;
+            margin: 1rem 12rem;
+    
+            .container-form {
+                form {
+                    label {
+                        display: block;
+                        margin-bottom: 0.625rem; //10px
+                        font-weight: bold;
+                    }
+                }
+    
+                .form-group {
+                    margin-bottom: 1rem; //16px
+    
+                    textarea {
+                        &:focus {
+                            border-color: $color-salmon;
+                            outline: 0 none;
+                        }
+                    }
+    
+                    input {
+                        &:focus {
+                            border-color: $color-salmon;
+                            outline: 0 none;
+                        }
+                    }
+                }
+    
+                .form-control {
+                    display: block;
+                    width: 100%;
+                    padding: 0.4375rem 0.75rem; //7px 12px
+                    font-size: $fuente-p-m-t-d; //1rem
+                    line-height: 1.5;
+                    color: $color-negro;
+                    background-color: $color-gris-form;
+                    border: 2px solid $color-gris-form;
+                    font-size: $fuente-p-m-t-d; //1rem
+                }
+    
+                .boton {
+                    width: 35%;
+                    display: inline-block;
+                    font-size: 0.9375rem;
+                    height: 3.5rem;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    /*border-radius: 4px;*/
+                    background: $color-verde;
+                    border: 2px solid $color-verde;
+                    font-size: $fuente-p-m-t-d; //0.9375rem
+    
+                    &:hover {
+                        border: 2px solid;
+                        background-color: $color-blanco;
+                    }
+                }
+            }
+    
+    
+        }
+    
+    }
+
+
+
+
+
+}
+
+/********************************************************/
+/************   Fin  CONTACTO       ****************/
+/************   (contacto.html) desktop 1024  *****************/
+/********************************************************/
+/**/
+/**/
+/********************************************************/
+/************   Comienzo  CONTACTO       ****************/
+/************   (contacto.html) desktop 1200 *****************/
+/********************************************************/
+@media screen and (min-width:1200px) {
+    .main-contacto {
+        .contenedor-consultas {
+            display: block;
+            text-align: center;
+            padding-top: 8rem;
+    
+            .consultas {
+    
+                .h2-consultas {
+                    font-size: $fuente-p-m-t-d; //16px
+                }
+    
+                .text-consultas {
+                    font-size: $fuente-p-4-form; //40px
+                    margin-bottom: 2rem;
+                }
+    
+                .text-consultas-dos {
+                    font-size: $fuente-p-1-form; //20px                    
+    
+                }
+    
+            }
+    
+        }
+    
+    
+        .contenedor-form {
+            @include flex-col;
+            margin: 1rem 30rem;
+    
+            .container-form {
+                form {
+                    label {
+                        display: block;
+                        margin-bottom: 0.625rem; //10px
+                        font-weight: bold;
+                    }
+                }
+    
+                .form-group {
+                    margin-bottom: 1rem; //16px
+    
+                    textarea {
+                        &:focus {
+                            border-color: $color-salmon;
+                            outline: 0 none;
+                        }
+                    }
+    
+                    input {
+                        &:focus {
+                            border-color: $color-salmon;
+                            outline: 0 none;
+                        }
+                    }
+                }
+    
+                .form-control {
+                    display: block;
+                    width: 100%;
+                    padding: 0.4375rem 0.75rem; //7px 12px
+                    font-size: $fuente-p-m-t-d; //1rem
+                    line-height: 1.5;
+                    color: $color-negro;
+                    background-color: $color-gris-form;
+                    border: 2px solid $color-gris-form;
+                }
+    
+                .boton {
+                    width: 35%;
+                    display: inline-block;              
+                    font-weight: bold;                    
+                    letter-spacing: 1px;
+                    /*border-radius: 4px;*/
+                    background: $color-verde;
+                    border: 2px solid $color-verde;
+                    padding: 0.75rem 3.125rem;
+                    cursor: pointer;
+                    font-size: $fuente-b-m-t-d; //0.9375rem ó 15px
+                    
+    
+                    &:hover {
+                        border: 2px solid;
+                        background-color: $color-blanco;
+                    }
+                }
+            }
+    
+    
+        }
+    
+    }
+
+
+
+
+}
+/********************************************************/
+/************   Fin  CONTACTO       ****************/
+/************   (contacto.html) desktop 1200 *****************/
+/********************************************************/
+/**/

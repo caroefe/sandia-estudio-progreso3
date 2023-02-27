@@ -1,79 +1,343 @@
-// estilos de nosotros
+// estilos de nosotros.html
 
 @import "../base/variables";
 @import "../base/mixin";
 
+//terminado
 /**/
 /********************************************************/
 /************   Comienzo  QUIENES SOMOS  ****************/
 /************   (nosotros.html) mobile  *****************/
 /********************************************************/
-
-.main-nosotros{
+.main-nosotros {
     .container-quienes {
         /*margin: arriba y abajo - izq y derecha*/
-        padding: 3rem;    
-        background-color: $color-verde;    
-    }
-    
-    .quienes-somos {    
-        text-align: left;    
-    }
-       
-    
-    .h2-quienes {    
-        align-items: center;
-        margin-top: 1rem;
-        margin-left: 1px;
-        font-size: 1.875rem;
-        font-weight: bold;
-    
-    }
-    
-    .h3-nombre {
-        margin-top: 4rem;
-        font-weight: bold;
-    }
-      
-    
-    .text-quienes {
-        margin-top: 1rem;
-        text-align: left;
-    }
-    
-    #container-nosotros {
+        padding: 3rem;
         background-color: $color-verde;
-        /*display: flex;
-        flex-direction: column;*/
+
+        .quienes-somos {
+            text-align: left;
+
+            .h2-quienes {
+                align-items: center;
+                margin-top: 1rem;
+                margin-left: 1px;
+                font-size: $fuente-h2-mobile-tablet; //1.875rem
+                font-weight: bold;
+            }
+
+            .text-quienes {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+
+
+    .container-nosotros {
+        background-color: $color-verde;
         @include flex-col;
-        /*justify-items: center; va solo en grid*/
-    
         z-index: 999;
+
+        .card {
+            width: 100%;
+            border: none;
+            background-color: $color-verde;
+
+
+            .contenido {
+                background-color: $color-verde;
+                margin: 0 1.5rem;
+
+                .h3-nombre {
+                    margin-top: 4rem;
+                    font-weight: bold;
+                    font-size: $fuente-h3-serv; //1.5625rem               
+                }
+
+                .text-present1 {
+                    margin-bottom: 1.875rem;
+                    text-align: left;
+                    display: block;
+                    font-weight: bold;
+                }
+
+                .text-present2 {
+                    margin-bottom: 4rem;
+                }
+
+            }
+        }
+
     }
-    
-    .card {
-        width: 100%;
-        border: none;
-        background-color: $color-verde;
-    }
-    
-    .card .contenido .text-present1 {
-        margin-bottom: 1.875rem;
-        text-align: left;
-        display: block;
-    }
-    
-    .contenido {
-        background-color: $color-verde;
-        margin: 0 1.5rem;
-    
-    }
-    
-    .text-present1 {
-        font-weight: bold;
-    }
-    
-    .text-present2 {
-        margin-bottom: 4rem;
-    }
+
 }
+
+
+/********************************************************/
+/************     Fin  QUIENES SOMOS     ****************/
+/************   (nosotros.html) mobile  *****************/
+/********************************************************/
+/**/
+/**/
+/*********************************************************/
+/************    Comienzo  QUIENES SOMOS     *************/
+/************    (nosotros.html) tablet     *************/
+/*********************************************************/
+@media screen and (min-width:768px) {
+    .main-nosotros {
+        .container-quienes {
+            background-color: $color-verde;
+
+            .quienes-somos {
+                margin: 2rem 4rem;
+
+                .h2-quienes {
+                    margin-top: 1rem;
+                    font-size: $fuente-h2-mobile-tablet; //1.875rem
+                    font-weight: bold;
+                }
+
+                .text-quienes {
+                    margin-top: 2rem;
+                    text-align: left;
+                }
+
+                .text-quienes2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem; //56px
+                }
+            }
+
+        }
+
+        .container-nosotros {
+            background-color: $color-verde;
+            justify-items: center;
+            align-items: center;
+
+            .card {
+                width: 80%;
+                padding: 0 3.125rem; //50px
+                @include flex-col;
+                text-align: left;
+
+
+                .contenido {
+                    background-color: $color-verde;
+                    margin: 0 1.5rem;
+
+                    .h3-nombre {
+                        margin-top: 4rem;
+                        font-weight: bold;
+                        font-size: $fuente-h3-serv; //1.5625rem               
+                    }
+
+                    .text-present1 {
+                        margin-bottom: 1.875rem; //30px
+                        text-align: left;
+                    }
+
+                    .text-present2 {
+                        margin-bottom: 3.125rem; //50px
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+/*********************************************************/
+/************       Fin  QUIENES SOMOS       *************/
+/************    (nosotros.html) tablet      *************/
+/*********************************************************/
+/**/
+/**/
+/**********************************************************/
+/************       Comienzo  QUIENES SOMOS   *************/
+/************    (nosotros.html) desktop 1024 *************/
+/**********************************************************/
+@media screen and (min-width:1024px) {
+    .main-nosotros {
+        .container-quienes {
+            background-color: $color-verde;
+         
+
+            .quienes-somos {
+                margin: 0rem 15rem;
+
+                .h2-quienes {
+                    margin-top: 1rem;
+                    font-size: $fuente-h2-nos; //2rem
+                    font-weight: bold;
+                }
+
+                .text-quienes {
+                    margin-top: 2rem;
+                    text-align: left;
+                }
+
+                .text-quienes2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem; //56px
+                    font-size: $fuente-p-alta-desktops; //0.9375rem
+                }
+            }
+
+        }
+
+        .container-nosotros {
+            background-color: $color-verde;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            grid-template-areas:
+                "nosotros-1 nosotros-2 nosotros-3";
+
+            justify-items: center;
+            align-items: center;
+
+            .card {
+                width: 80%;
+                padding: 0 1.25rem; //20px
+                @include flex-col;
+                text-align: left;
+
+                .contenido {             
+                    
+                    .text-present1 {
+                        margin-bottom: 0.625rem; //10px
+                        text-align: left;
+                    }
+
+                    .text-present2 {
+                        margin-bottom: 3.125rem; //50px
+                    }
+
+                }
+            }
+
+            .nosotros-1 {
+                grid-area: nosotros-1;
+
+            }
+
+            .nosotros-2 {
+                grid-area: nosotros-2;
+
+            }
+
+            .nosotros-3 {
+                grid-area: nosotros-3;
+
+            }
+
+        }
+
+    }
+
+
+}
+
+/*********************************************************/
+/************       Fin  QUIENES SOMOS          *************/
+/************    (nosotros.html) desktop 1024   *************/
+/*********************************************************/
+/**/
+/**/
+/**********************************************************/
+/************       Comienzo  QUIENES SOMOS   *************/
+/************    (nosotros.html) desktop 1200 *************/
+/**********************************************************/
+@media screen and (min-width:1200px) {
+    .main-nosotros {
+        .container-quienes {
+            background-color: $color-verde;
+            padding-top: 4.5rem;
+
+            .quienes-somos {
+                margin: 3rem 22rem;
+
+                .h2-quienes {
+                    margin-top: 1rem;
+                    font-size: $fuente-h2-nos; //2rem
+                    font-weight: bold;
+                }
+
+                .text-quienes {
+                    margin-top: 2rem;
+                    text-align: left;
+                }
+
+                .text-quienes2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem; //56px
+                }
+            }
+
+        }
+
+        .container-nosotros {
+            background-color: $color-verde;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            grid-template-areas:
+                "nosotros-1 nosotros-2 nosotros-3";
+
+            justify-items: center;
+            align-items: center;
+
+            .card {
+                width: 80%;
+                padding: 0 1.25rem; //20px
+                @include flex-col;
+                text-align: left;
+
+                .contenido {             
+                    
+                    .text-present1 {
+                        margin-bottom: 0.625rem; //10px
+                        text-align: left;
+                    }
+
+                    .text-present2 {
+                        margin-bottom: 3.125rem; //50px
+                    }
+
+                }
+            }
+
+            .nosotros-1 {
+                grid-area: nosotros-1;
+
+            }
+
+            .nosotros-2 {
+                grid-area: nosotros-2;
+
+            }
+
+            .nosotros-3 {
+                grid-area: nosotros-3;
+
+            }
+
+        }
+
+    }
+
+
+}
+
+/***************************************************************/
+/************       Fin  QUIENES SOMOS             *************/
+/************    (nosotros.html) desktop 1200      *************/
+/***************************************************************/
+/**/

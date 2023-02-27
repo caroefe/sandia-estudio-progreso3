@@ -2,6 +2,8 @@
 @import "../base/variables";
 @import "../base/mixin";
 
+//terminado
+
 /* ==========          MOBILE FIRST           ==============*/
 /**/
 /**********************************************************/
@@ -13,29 +15,29 @@
     @include flex-col-cen-cen;
     height: $altura-footer; //6.5rem
     background-color: $color-salmon;
-}
 
-.texto-copyright {
-   font-size: $fuente-p-m; //1rem    
-    text-align: center;
-    background-color: $color-salmon;
-}
-
-
-.redes {
-    display: none;
-}
+    p {
+        a {
+            text-decoration: none;
+            color: $color-negro;
+        }
+    }
 
 
-footer p a {
-    text-decoration: none;
-    color: $color-negro;
+    .texto-copyright {
+        font-size: $fuente-p-m; //1rem    
+        text-align: center;
+        background-color: $color-salmon;
+    }
 
-}
 
-.link-servicios:active {
-    color: $color-blanco;
+    .redes {
+        display: none;
+    }
 
+    .link-servicios:active {
+        color: $color-blanco;
+    }
 }
 
 /************************************************************/
@@ -48,7 +50,7 @@ footer p a {
 /************        Comienzo FOOTER         *************/
 /************            tablet              *************/
 /*********************************************************/
-@include tablet {
+@media screen and (min-width:768px){
     .footer {
         @include flex-row-cen-cen;
         height: $altura-footer; //6.5rem
@@ -60,34 +62,114 @@ footer p a {
                 color: $color-negro;
             }
         }
+
+
+        .texto-copyright {
+            display: block;
+            margin-top: 2rem;
+            font-size: $fuente-p-t-ds; //0.9rem
+            background-color: $color-salmon;
+
+
+        }
+
+        .texto-seguinos {
+            display: block;
+            margin-left: 8rem;
+            font-size: $fuente-p-t-ds; //0.9rem
+            background-color: $color-salmon;
+
+        }
+
+        .redes {
+            /*justify-content: center;*/
+            height: 0.9375rem; //15px
+            display: flex;
+            background-color: $color-salmon;
+        }
+
+        .icon-redes {
+            margin-left: 0.5rem;
+        }
+
     }
-
-    .texto-copyright {
-        display: block;
-        margin-top: 2rem;
-        font-size: 0.9rem;
-        background-color: $color-salmon;
-
-
-    }
-
-    .texto-seguinos {
-        display: block;
-        margin-left: 8rem;
-        font-size: 0.9rem;
-        background-color: $color-salmon;
-
-    }
-
-    .redes {
-        /*justify-content: center;*/
-        height: 15px;
-        display: flex;
-        background-color: $color-salmon;
-    }
-
-    .icon-redes {
-        margin-left: 0.5rem;
-    }
-
 }
+
+
+/************************************************************/
+/*************          Fin FOOTER         ******************/
+/*************            tablet           ******************/
+/************************************************************/
+/**/
+/**/
+/*********************************************************/
+/************        Comienzo FOOTER         *************/
+/************            desktop 1024        *************/
+/*********************************************************/
+
+@media screen and (min-width:1024px){
+    .footer {
+        @include flex-row-cen-cen;
+        height: $altura-footer; //6.5rem
+        background-color: $color-salmon;
+        padding: 1rem 1rem 1rem 1rem;
+
+        p {
+            a {
+                text-decoration: none;
+                color: $color-negro;
+
+                &:hover {
+                    color: #fff;
+
+
+                }
+            }
+        }
+
+
+        .texto-copyright {
+            display: block;
+            margin-top: 2rem;
+            font-size: $fuente-p-t-ds; //0.9rem
+            background-color: $color-salmon;
+        }
+
+
+        .texto-seguinos {
+            display: block;
+            margin-left: 31.25rem; //500px
+            margin-right: 1rem;
+            font-size: $fuente-p-t-ds; //0.9rem
+            background-color: $color-salmon;
+        }
+
+        .redes {
+            /*justify-content: center;*/
+            height: 1.875rem; //30px
+            display: flex;
+            background-color: $color-salmon;
+        }
+
+        .icon-redes {
+            margin-left: 0.5rem;
+        }
+
+    }
+}
+
+/************************************************************/
+/*************          Fin FOOTER         ******************/
+/*************         desktop 1024        ******************/
+/************************************************************/
+/**/
+/**/
+/*********************************************************/
+/************        Comienzo FOOTER         *************/
+/************            desktop 1200        *************/
+/*********************************************************/
+    /*mismo que en desktop 1024*/
+/*********************************************************/
+/************             Fin FOOTER         *************/
+/************            desktop 1200        *************/
+/*********************************************************/

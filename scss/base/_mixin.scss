@@ -20,6 +20,11 @@
     flex-direction: column;
 }
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 @mixin flex-col-cen-cen {
     display: flex;
     flex-direction: column;
@@ -75,22 +80,4 @@
 @mixin hover-overlay {
     height: 100%;
     cursor: pointer;
-}
-
-@mixin tablet{
-    @media (min-width: $tablet){
-        @content;
-    }
-}
-
-@mixin desktop-1024{
-    @media (min-width: $desktop-1024){
-        @content;
-    }
-}
-
-@mixin desktop-1200{
-    @media (min-width: $desktop-1200){
-        @content;
-    }
 }

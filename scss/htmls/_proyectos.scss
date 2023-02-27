@@ -1,18 +1,16 @@
-@import "../base/extend";
 @import "../base/variables";
+@import "../base/mixin";
 // estilos de proyectos.html
-
+//terminado
 
 /***********************************************************/
 /*************     Comienzo GALERIA      *******************/
 /*************  (proyectos.html) mobile  *******************/
 /***********************************************************/
-
 .main-proyectos {
-
     .contenedor-imagenes {
         padding: 1.25rem 0;
-        border-radius: 3px;
+        border-radius: 0.1875rem;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -29,74 +27,359 @@
         align-items: center;
         gap: 1.25rem;
 
-    }
+        .imagen {
+            width: 80%;
+            position: relative;
 
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
 
-    .imagen-1 {
-        grid-area: imagen-1;
+            &:hover {
 
-    }
+                .overlay {
+                    @include hover-overlay;
+                }
 
-    .imagen-2 {
-        grid-area: imagen-2;
-
-    }
-
-    .imagen-3 {
-        grid-area: imagen-3;
-
-    }
-
-    .imagen-4 {
-        grid-area: imagen-4;
-
-    }
-
-    .imagen-5 {
-        grid-area: imagen-5;
-
-    }
-
-    .imagen-6 {
-        grid-area: imagen-6;
-
-    }
-
-    .imagen {
-        width: 80%;
-        position: relative;
-
-        img {
-            width: 100%;
-            object-fit: cover;
+            }
         }
-    }
-
-    .imagen:hover {
 
         .overlay {
-            @include hover-overlay;
+            @include overlay;
+            font-weight: bold;
+
+            h4 {
+                @include overlay-h4;
+                font-size: $fuente-h4-mobile-tablet; //16px
+
+            }
+
+            .p-proyecto {
+                @include p-proyecto;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+
         }
 
-    }
-
-    .overlay {
-        @include overlay;
-        font-weight: bold;
-
-        h4 {
-            @include overlay-h4;
-            font-size: 16px;
+        .imagen-1 {
+            grid-area: imagen-1;
 
         }
 
-        .p-proyecto {
-            @include p-proyecto;
-            font-size: 12px;
-            margin-top: 10px;
+        .imagen-2 {
+            grid-area: imagen-2;
+
         }
 
+        .imagen-3 {
+            grid-area: imagen-3;
 
+        }
+
+        .imagen-4 {
+            grid-area: imagen-4;
+
+        }
+
+        .imagen-5 {
+            grid-area: imagen-5;
+
+        }
+
+        .imagen-6 {
+            grid-area: imagen-6;
+
+        }
     }
 
 }
+
+/***********************************************************/
+/*************     Fin      GALERIA      *******************/
+/*************  (proyectos.html) mobile  *******************/
+/***********************************************************/
+/**/
+/**/
+/***********************************************************/
+/*************     Comienzo GALERIA      *******************/
+/*************  (proyectos.html) tablet  *******************/
+/***********************************************************/
+@media screen and (min-width:768px) {
+    .main-proyectos {
+        .contenedor-imagenes {
+            padding: 1.25rem 1.25rem;
+            border-radius: 0.1875rem; //3px
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: (3) 1fr;
+
+            grid-template-areas:
+                "imagen-1 imagen-2"
+                "imagen-3 imagen-4"
+                "imagen-5 imagen-6";
+
+            justify-items: center;
+            align-items: center;
+
+            .imagen {
+                width: 100%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    .overlay {
+                        @include hover-overlay;
+                    }
+
+                }
+            }
+
+            .overlay {
+                @include overlay;
+                font-weight: bold;
+
+                h4 {
+                    @include overlay-h4;
+                    font-size: $fuente-h4-mobile-tablet; //16px
+
+                }
+
+                .p-proyecto {
+                    @include p-proyecto;
+                    margin-top: 0.625rem; //10px
+                    font-size: $fuente-p-chica-desktops; //13px
+                }
+
+
+            }
+
+            .imagen-1 {
+                grid-area: imagen-1;
+
+            }
+
+            .imagen-2 {
+                grid-area: imagen-2;
+
+            }
+
+            .imagen-3 {
+                grid-area: imagen-3;
+
+            }
+
+            .imagen-4 {
+                grid-area: imagen-4;
+
+            }
+
+            .imagen-5 {
+                grid-area: imagen-5;
+
+            }
+
+            .imagen-6 {
+                grid-area: imagen-6;
+
+            }
+        }
+
+    }
+}
+
+/***********************************************************/
+/*************     Fin      GALERIA      *******************/
+/*************  (proyectos.html) tablet  *******************/
+/***********************************************************/
+/**/
+/**/
+/*****************************************************************/
+/*************     Comienzo GALERIA            *******************/
+/*************  (proyectos.html) desktop 1024  *******************/
+/*****************************************************************/
+@media screen and (min-width:1024px) {
+    .main-proyectos {
+        .contenedor-imagenes {
+            padding: 1.25rem 1.25rem;
+            border-radius: 0.1875rem; //3px
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: (3) 1fr;
+
+            grid-template-areas:
+                "imagen-1 imagen-2"
+                "imagen-3 imagen-4"
+                "imagen-5 imagen-6";
+
+            justify-items: center;
+            align-items: center;
+
+            .imagen-1 {
+                grid-area: imagen-1;
+            }
+
+            .imagen-2 {
+                grid-area: imagen-2;
+            }
+
+            .imagen-3 {
+                grid-area: imagen-3;
+            }
+
+            .imagen-4 {
+                grid-area: imagen-4;
+            }
+
+            .imagen-5 {
+                grid-area: imagen-5;
+            }
+
+            .imagen-6 {
+                grid-area: imagen-6;
+            }
+
+            .imagen {
+                width: 100%;
+                position: relative;
+
+                img {
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    .overlay {
+                        @include hover-overlay;
+                    }
+                }
+            }
+
+
+
+            .overlay {
+                @include overlay;
+                font-weight: bold;
+
+                h4 {
+                    @include overlay-h4;
+                    font-size: $fuente-h4-desktops; //20px
+
+                }
+
+                .p-proyecto {
+                    @include p-proyecto;
+                    font-size: $fuente-p-chica-desktops; //13px
+                    margin-top: 0.625rem; //10px
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+/***********************************************************/
+/*************     Fin      GALERIA      *******************/
+/*************  (proyectos.html) desktop 1024  *************/
+/***********************************************************/
+/**/
+/**/
+/*****************************************************************/
+/*************     Comienzo GALERIA            *******************/
+/*************  (proyectos.html) desktop 1200  *******************/
+/*****************************************************************/
+@media screen and (min-width:1200px) {
+    .main-proyectos {
+        .contenedor-imagenes {           
+            border-radius: 0.1875rem; //3px
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: (3) 1fr;
+
+            grid-template-areas:
+                "imagen-1 imagen-2"
+                "imagen-3 imagen-4"
+                "imagen-5 imagen-6";
+
+            justify-items: center;
+            align-items: center;
+
+            .imagen-1 {
+                grid-area: imagen-1;
+            }
+
+            .imagen-2 {
+                grid-area: imagen-2;
+            }
+
+            .imagen-3 {
+                grid-area: imagen-3;
+            }
+
+            .imagen-4 {
+                grid-area: imagen-4;
+            }
+
+            .imagen-5 {
+                grid-area: imagen-5;
+            }
+
+            .imagen-6 {
+                grid-area: imagen-6;
+            }
+
+            .imagen {
+                width: 90%;
+                position: relative;
+
+                img {
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    .overlay {
+                        @include hover-overlay;
+                    }
+                }
+            }
+
+
+
+            .overlay {
+                @include overlay;
+                font-weight: bold;
+
+                h4 {
+                    @include overlay-h4;
+                    font-size: $fuente-h4-desktops; //20px
+
+                }
+
+                .p-proyecto {
+                    @include p-proyecto;
+                    font-size: $fuente-p-chica-desktops; //13px
+                    margin-top: 0.625rem; //10px
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+
+/***********************************************************/
+/*************     Fin      GALERIA      *******************/
+/*************  (proyectos.html) desktop 1200  *************/
+/***********************************************************/
+/**/

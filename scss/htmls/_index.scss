@@ -5,157 +5,158 @@
 //terminado
 // estilos de index.html
 /* ::::::::::::    Hero (mobile)    ::::::::::::::::*/
-
-.hero {
-    padding: 10%;
-    text-align: center;
-    background-color: $color-salmon;
-
-    h1 {
-        margin-top: 6rem;
-        margin-bottom: 0.8rem;
-        font-size: $fuente-h1-chica; //3rem
+.main-index {
+    .hero {
+        padding: 10%;
         text-align: center;
-        font-weight: bold;
-        animation: aparecer-h1 3s infinite;
-    }
+        background-color: $color-salmon;
 
-    @keyframes aparecer-h1 {
-        0% {
-            opacity: 0;
-        }
-
-        70% {
-            opacity: 0.5;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
-
-/* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
-
-.container-mision {
-    /*margin: arriba y abajo - izq y derecha*/
-    padding-top: 3rem;
-    /*64 px*/
-    background-color: $color-verde;
-    text-align: left;
-
-    .mision {
-        margin: 0 1.5rem;
-
-        .h2-mision {
-            align-items: center;
-            margin-top: 1rem;
-            margin-left: 0.0625rem;
-            font-size: $fuente-h2-mobile-tablet;
+        h1 {
+            margin-top: 6rem;
+            margin-bottom: 0.8rem;
+            font-size: $fuente-h1-chica; //3rem
+            text-align: center;
             font-weight: bold;
+            animation: aparecer-h1 3s infinite;
+
+            @keyframes aparecer-h1 {
+                0% {
+                    opacity: 0;
+                }
+
+                70% {
+                    opacity: 0.5;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
         }
 
-        .text-mision {
-            margin-top: 1rem;
-            text-align: left;
-        }
-
-        .text-mision2 {
-            text-align: left;
-            margin-bottom: 3.5rem;
-        }
     }
 
-    .img-mision {
-        @include flex-col;
-    }
-}
 
+    /* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
 
+    .container-mision {
+        /*margin: arriba y abajo - izq y derecha*/
+        padding-top: 3rem;
+        /*64 px*/
+        background-color: $color-verde;
+        text-align: left;
 
-/* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+        .mision {
+            margin: 0 1.5rem;
 
-.container-vision {
-    background-color: $color-blanco;
+            .h2-mision {
+                align-items: center;
+                margin-top: 1rem;
+                margin-left: 0.0625rem;
+                font-size: $fuente-h2-mobile-tablet;
+                font-weight: bold;
+            }
 
-    .vision {
-        margin: 0 1.5rem;
-
-        .h2-vision {
-            align-items: center;
-            margin-top: 3rem;
-            margin-left: 0.0625rem;
-            font-size: $fuente-h2-mobile-tablet;
-            font-weight: bold;
-
-            .text-vision {
+            .text-mision {
                 margin-top: 1rem;
                 text-align: left;
-                margin-bottom: 3rem;
-            }
-        }
-    }
-
-    .img-vision {
-        @include flex-col;
-    }
-}
-
-
-
-/* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
-
-.container-valores {
-    background-color: $color-verde;
-    padding: 1rem;
-
-    .img-valores {
-        display: none;
-    }
-
-    .valores {
-        margin: 0 1.5rem;
-    }
-
-    .valores {
-
-        .h2-valores {
-            align-items: center;
-            margin-top: 3rem;
-            margin-left: 0.0625rem;
-            font-size: $fuente-h2-mobile-tablet;
-            font-weight: bold;
-        }
-
-        .text-valores {
-            margin-top: 1rem;
-            text-align: left;
-            text-align: left;
-            margin-bottom: 3.5rem;
-
-            ul {
-                .valor-1 {
-                    @extend %padding-valores;
-                }
-
-                .valor-2 {
-                    @extend %padding-valores;
-                }
-
-                .valor-3 {
-                    @extend %padding-valores;
-                }
             }
 
+            .text-mision2 {
+                text-align: left;
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        .img-mision {
+            @include flex-col;
+        }
+    }
+
+
+
+    /* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+
+    .container-vision {
+       /* background-color: green;*/
+
+        .vision {
+            margin: 0 1.5rem;
+
+            .h2-vision {
+                align-items: center;
+                margin-top: 3rem;
+                margin-left: 0.0625rem;
+                font-size: $fuente-h2-mobile-tablet;
+                font-weight: bold;
+
+                .text-vision {
+                    margin-top: 1rem;
+                    text-align: left;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .img-vision {
+            @include flex-col;
+        }
+    }
+
+
+
+    /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+
+    .container-valores {
+        background-color: $color-verde;
+        padding: 1rem;
+
+        .img-valores {
+            display: none;
+        }
+
+        .valores {
+            margin: 0 1.5rem;
+        }
+
+        .valores {
+
+            .h2-valores {
+                align-items: center;
+                margin-top: 3rem;
+                margin-left: 0.0625rem;
+                font-size: $fuente-h2-mobile-tablet;
+                font-weight: bold;
+            }
+
+            .text-valores {
+                margin-top: 1rem;
+                text-align: left;
+                text-align: left;
+                margin-bottom: 3.5rem;
+
+                ul {
+                    .valor-1 {
+                        @extend %padding-valores;
+                    }
+
+                    .valor-2 {
+                        @extend %padding-valores;
+                    }
+
+                    .valor-3 {
+                        @extend %padding-valores;
+                    }
+                }
+
+            }
+
+
         }
 
 
     }
-
-
 }
-
 
 
 
@@ -172,116 +173,118 @@
 
 /* ::::::::::::    Hero (tablet)    ::::::::::::::::*/
 @media screen and (min-width:768px) {
-    .hero {
-        height: 30%;
-        padding: 10%;
-        text-align: center;
-        background-color: $color-salmon;
-
-        h1 {
-            font-size: $fuente-h1-alta; //3.5rem
-            margin-top: 4rem;
+    .main-index {
+        .hero {
+            height: 30%;
+            padding: 10%;
             text-align: center;
-            font-weight: bold;
-        }
-    }
+            background-color: $color-salmon;
 
-    /* :::::::::::: MISIÓN (index.html) (tablet)  ::::::::::::::::*/
-
-    .container-mision {
-        /*margin: arriba y abajo - izq y derecha*/
-        padding-top: 3rem;
-        /*64 px*/
-        background-color: $color-verde;
-        text-align: left;
-
-        .mision {
-            margin: 0 3rem;
-
-            .h2-mision {
-                align-items: center;
-                margin-top: 1rem;
-                margin-left: 0.0625rem;
-                font-size: $fuente-h2-mobile-tablet; //1.875rem
+            h1 {
+                font-size: $fuente-h1-alta; //3.5rem
+                margin-top: 4rem;
+                text-align: center;
                 font-weight: bold;
             }
-
-            .text-mision {
-                margin-top: 1rem;
-                text-align: left;
-
-            }
-
-            .text-mision2 {
-                text-align: left;
-                margin-bottom: 3.5rem;
-            }
-
         }
 
-        .img-mision {
-            @include flex-col;
-        }
-    }
+        /* :::::::::::: MISIÓN (index.html) (tablet)  ::::::::::::::::*/
 
+        .container-mision {
+            /*margin: arriba y abajo - izq y derecha*/
+            padding-top: 3rem;
+            /*64 px*/
+            background-color: $color-verde;
+            text-align: left;
 
-    /* ::::::::::::: VISIÓN (index.html) (tablet) :::::::::::::::*/
+            .mision {
+                margin: 0 3rem;
 
-    .container-vision {
-        background-color: $color-blanco;
+                .h2-mision {
+                    align-items: center;
+                    margin-top: 1rem;
+                    margin-left: 0.0625rem;
+                    font-size: $fuente-h2-mobile-tablet; //1.875rem
+                    font-weight: bold;
+                }
 
-        .vision {
-            margin: 0 3rem;
-
-            .h2-vision {
-                align-items: center;
-                margin-top: 3rem;
-                margin-left: 0.0625rem;
-                font-size: $fuente-h2-mobile-tablet; //1.875rem
-                font-weight: bold;
-
-                .text-vision {
+                .text-mision {
                     margin-top: 1rem;
                     text-align: left;
-                    margin-bottom: 4rem;
+
+                }
+
+                .text-mision2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem;
+                }
+
+            }
+
+            .img-mision {
+                @include flex-col;
+            }
+        }
+
+
+        /* ::::::::::::: VISIÓN (index.html) (tablet) :::::::::::::::*/
+
+        .container-vision {
+
+
+            .vision {
+                margin: 0 3rem;
+
+                .h2-vision {
+                    align-items: center;
+                    margin-top: 3rem;
+                    margin-left: 0.0625rem;
+                    font-size: $fuente-h2-mobile-tablet; //1.875rem
+                    font-weight: bold;
+
+                    .text-vision {
+                        margin-top: 1rem;
+                        text-align: left;
+                        margin-bottom: 4rem;
+                    }
+                }
+            }
+
+            .img-vision {
+                display: flex;
+            }
+        }
+
+        /* :::::::::   VALORES (index.html) (tablet) ::::::::: */
+        .container-valores {
+            background-color: $color-verde;
+
+            .img-valores {
+                display: none;
+            }
+
+            .valores {
+                margin: 0 3rem;
+
+                .h2-valores {
+                    align-items: center;
+                    margin-top: 3rem;
+                    margin-left: 0.0625rem;
+                    font-size: $fuente-h2-mobile-tablet;
+                    font-weight: bold;
+                }
+
+                .text-valores {
+                    margin-top: 1rem;
+                    text-align: left;
+                    margin-bottom: 3.5rem;
+
+
                 }
             }
         }
 
-        .img-vision {
-            display: flex;
-        }
     }
-
-    /* :::::::::   VALORES (index.html) (tablet) ::::::::: */
-    .container-valores {
-        background-color: $color-verde;
-
-        .img-valores {
-            display: none;
-        }
-
-        .valores {
-            margin: 0 3rem;
-
-            .h2-valores {
-                align-items: center;
-                margin-top: 3rem;
-                margin-left: 0.0625rem;
-                font-size: $fuente-h2-mobile-tablet;
-                font-weight: bold;
-            }
-
-            .text-valores {
-                margin-top: 1rem;
-                text-align: left;
-                margin-bottom: 3.5rem;
-
-
-            }
-        }
-    }
-
 }
 
 /*********************************************************/
@@ -295,111 +298,114 @@
 /************            desktop 1024        *************/
 /*********************************************************/
 @media screen and (min-width:1024px) {
-    .hero {
-        height: 30%;
-        padding: 10%;
-        text-align: center;
-        background-color: #ff5174;
-
-        h1 {
-            font-size: $fuente-h1-mediana; //4rem
-            margin-top: 4rem;
+    .main-index {
+        .hero {
+            height: 30%;
+            padding: 10%;
             text-align: center;
-            font-weight: bold;
-        }
-    }
+            background-color: $color-salmon;
 
-    /* :::::::::::: MISIÓN (index.html) (desktop 1024)  ::::::::::::::::*/
-    .container-mision {
-        padding-top: 3.5rem;
-        background-color: $color-verde;
-
-        .mision {
-            margin: 0 15rem 2rem 15rem;
-
-            .h2-mision {
-                margin-top: 1rem;
-                margin-left: 0.0625rem;
-                font-size: $fuente-h2-desktops; //2rem
+            h1 {
+                font-size: $fuente-h1-mediana; //4rem
+                margin-top: 4rem;
+                text-align: center;
                 font-weight: bold;
             }
+        }
 
-            .text-mision {
-                margin-top: 2rem;
-                text-align: left;
-                font-size: $fuente-p-b-t-d-2; //0.9375rem
+        /* :::::::::::: MISIÓN (index.html) (desktop 1024)  ::::::::::::::::*/
+        .container-mision {
+            padding-top: 3.5rem;
+            background-color: $color-verde;
 
+            .mision {
+                margin: 0 15rem 2rem 15rem;
+
+                .h2-mision {
+                    margin-top: 1rem;
+                    margin-left: 0.0625rem;
+                    font-size: $fuente-h2-desktops; //2rem
+                    font-weight: bold;
+                }
+
+                .text-mision {
+                    margin-top: 2rem;
+                    text-align: left;
+                    font-size: $fuente-p-b-t-d-2; //0.9375rem
+
+                }
+
+                .text-mision2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem;
+                    font-size: $fuente-p-b-t-d-2; //0.9375rem
+                }
             }
 
-            .text-mision2 {
-                text-align: left;
-                margin-bottom: 3.5rem;
-                font-size: $fuente-p-b-t-d-2; //0.9375rem
+            .img-mision {
+                width: 100%;
+            }
+
+        }
+
+        /* ::::::::::::: VISIÓN (index.html) (desktop 1024)) :::::::::::::::*/
+        .container-vision {
+            display: flex;
+
+
+            .vision {
+                @include flex-col;
+
+                .h2-vision {
+                    margin-top: 5rem;
+                    font-weight: bold;
+                    font-size: $fuente-h2-desktops; //2rem
+
+                    .text-vision {
+                        margin: 0.9375rem;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .img-vision {
+                width: 80%;
             }
         }
 
-        .img-mision {
-            width: 100%;
-        }
+        /* :::::::::   VALORES (index.html) (desktop 1024) ::::::::: */
+        .container-valores {
+            background-color: $color-verde;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 2fr;
+            grid-template-areas:
+                "img-valores h2-valores"
+                "img-valores text-valores";
 
-    }
+            .img-valores {
+                grid-area: img-valores;
+                display: block;
+                width: 50%;
+            }
 
-    /* ::::::::::::: VISIÓN (index.html) (desktop 1024)) :::::::::::::::*/
-    .container-vision {
-        display: flex;
-        background-color: $color-blanco;
+            .valores {
+                @include flex-col;
 
-        .vision {
-            @include flex-col;
+                .h2-valores {
+                    grid-area: h2-valores;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 2rem;
+                }
 
-            .h2-vision {
-                margin-top: 5rem;
-                font-weight: bold;
-                font-size: $fuente-h2-desktops; //2rem
-
-                .text-vision {
-                    margin: 0.9375rem;
+                .text-valores {
+                    grid-area: text-valores;
                     text-align: left;
                 }
             }
-        }
 
-        .img-vision {
-            width: 80%;
-        }
-    }
-
-    /* :::::::::   VALORES (index.html) (desktop 1024) ::::::::: */
-    .container-valores {
-        background-color: $color-verde;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 2fr;
-        grid-template-areas:
-            "img-valores h2-valores"
-            "img-valores text-valores";
-
-        .img-valores {
-            grid-area: img-valores;
-            display: block;
-            width: 50%;
-        }
-
-        .valores {
-            @include flex-col;
-
-            .h2-valores {
-                grid-area: h2-valores;
-                font-weight: bold;
-                text-align: left;
-                font-size: 2rem;
-            }
-
-            .text-valores {
-                grid-area: text-valores;
-                text-align: left;
-            }
         }
 
     }
@@ -418,119 +424,121 @@
 /************            desktop 1200        *************/
 /*********************************************************/
 @media screen and (min-width:1200px) {
-    .hero {
-        height: 30%;
-        padding: 10%;
-        text-align: center;
-        background-color: #ff5174;
-
-        h1 {
-            font-size: $fuente-h1-grande; //5rem
-            margin-top: 4rem;
+    .main-index {
+        .hero {
+            height: 30%;
+            padding: 10%;
             text-align: center;
-            font-weight: bold;
-        }
-    }
+            background-color: $color-salmon;
 
-    /* :::::::::::: MISIÓN (index.html) (desktop 1200)  ::::::::::::::::*/
-    .container-mision {
-        padding-top: 3.5rem;
-        background-color: $color-verde;
-        text-align: left;
-
-        .mision {
-            margin: 3rem 22rem;
-
-            .h2-mision {
-                margin-top: 1rem;
-                margin-left: 0.0625rem;
-                font-size: $fuente-h2-desktops; //2rem
+            h1 {
+                font-size: $fuente-h1-grande; //5rem
+                margin-top: 4rem;
+                text-align: center;
                 font-weight: bold;
-                align-items: center;
-            }
-
-            .text-mision {
-                margin-top: 2rem;
-                text-align: left;
-
-            }
-
-            .text-mision2 {
-                text-align: left;
-                margin-bottom: 3.5rem;
             }
         }
 
-        .img-mision {
-            width: 100%;
-        }
+        /* :::::::::::: MISIÓN (index.html) (desktop 1200)  ::::::::::::::::*/
+        .container-mision {
+            padding-top: 3.5rem;
+            background-color: $color-verde;
+            text-align: left;
 
-    }
+            .mision {
+                margin: 3rem 22rem;
 
-    /* ::::::::::::: VISIÓN (index.html) (desktop 1200)) :::::::::::::::*/
-    .container-vision {
-        display: flex;
-        background-color: $color-blanco;
-        display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "h2-vision img-vision img-vision"
-            "text-vision img-vision img-vision";
+                .h2-mision {
+                    margin-top: 1rem;
+                    margin-left: 0.0625rem;
+                    font-size: $fuente-h2-desktops; //2rem
+                    font-weight: bold;
+                    align-items: center;
+                }
 
-        .vision {
-            display: flex;
-            margin: 5rem;
+                .text-mision {
+                    margin-top: 2rem;
+                    text-align: left;
 
-            .h2-vision {
-                grid-area: h2-vision;
-                margin-top: 5rem;               
-                font-weight: bold;
-                font-size: $fuente-h2-desktops; //2rem
-                text-align: left;
-                margin-bottom: 2rem;
+                }
 
-                .text-vision {
-                    grid-area: text-vision;
-                    text-align: left;                    
-                    margin-right: 10rem;
+                .text-mision2 {
+                    text-align: left;
+                    margin-bottom: 3.5rem;
                 }
             }
+
+            .img-mision {
+                width: 100%;
+            }
+
         }
 
-        .img-vision {
-            grid-area: img-vision;
-            @include flex-row;
-        }
-    }
-
-    /* :::::::::   VALORES (index.html) (desktop 1200) ::::::::: */
-    .container-valores {
-        background-color: $color-verde;
-        /*hereda grid*/
-
-        .img-valores {
-            width: 50%;
-        }
-
-        .valores {
+        /* ::::::::::::: VISIÓN (index.html) (desktop 1200)) :::::::::::::::*/
+        .container-vision {
             display: flex;
-            margin-left: 3rem;
-            margin-right: 10rem;
 
-            .h2-valores {
-                font-weight: bold;
-                text-align: left;
-                font-size: $fuente-h2-desktops; //2rem
+            display: grid;
+            grid-template-columns: 3fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "h2-vision img-vision img-vision"
+                "text-vision img-vision img-vision";
+
+            .vision {
+                display: flex;
+                margin: 5rem;
+
+                .h2-vision {
+                    grid-area: h2-vision;
+                    margin-top: 5rem;
+                    font-weight: bold;
+                    font-size: $fuente-h2-desktops; //2rem
+                    text-align: left;
+                    margin-bottom: 2rem;
+
+                    .text-vision {
+                        grid-area: text-vision;
+                        text-align: left;
+                        margin-right: 10rem;
+                    }
+                }
             }
 
-            .text-valores {
-                text-align: left;
+            .img-vision {
+                grid-area: img-vision;
+                @include flex-row;
             }
         }
 
-    }
+        /* :::::::::   VALORES (index.html) (desktop 1200) ::::::::: */
+        .container-valores {
+            background-color: $color-verde;
+            /*hereda grid*/
 
+            .img-valores {
+                width: 50%;
+            }
+
+            .valores {
+                display: flex;
+                margin-left: 3rem;
+                margin-right: 10rem;
+
+                .h2-valores {
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: $fuente-h2-desktops; //2rem
+                }
+
+                .text-valores {
+                    text-align: left;
+                }
+            }
+
+        }
+
+    }
 }
 
 

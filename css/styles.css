@@ -152,25 +152,21 @@ nav ul li a:active {
 /********     Fin     HEADER Nav Bar     ***********/
 /********            desktop 1200        ***********/
 /***************************************************/
-.main-index .container-valores .valores .text-valores ul .valor-1, .main-index .container-valores .valores .text-valores ul .valor-2, .main-index .container-valores .valores .text-valores ul .valor-3 {
+.container-valores .valores .text-valores ul .valor-1, .container-valores .valores .text-valores ul .valor-2, .container-valores .valores .text-valores ul .valor-3 {
   padding-bottom: 1rem; }
 
 /* ::::::::::::    Hero (mobile)    ::::::::::::::::*/
-.main-index {
-  /* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
-  /* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
-  /* :::::::::   VALORES (mobile) (index.html)  ::::::::: */ }
-  .main-index .hero {
-    padding: 10%;
+.hero {
+  padding: 10%;
+  text-align: center;
+  background-color: #ff5174; }
+  .hero h1 {
+    margin-top: 6rem;
+    margin-bottom: 0.8rem;
+    font-size: 3rem;
     text-align: center;
-    background-color: #ff5174; }
-    .main-index .hero h1 {
-      margin-top: 6rem;
-      margin-bottom: 0.8rem;
-      font-size: 3rem;
-      text-align: center;
-      font-weight: bold;
-      animation: aparecer-h1 3s infinite; }
+    font-weight: bold;
+    animation: aparecer-h1 3s infinite; }
 
 @keyframes aparecer-h1 {
   0% {
@@ -179,64 +175,70 @@ nav ul li a:active {
     opacity: 0.5; }
   100% {
     opacity: 1; } }
-  .main-index .container-mision {
-    /*margin: arriba y abajo - izq y derecha*/
-    padding-top: 3rem;
-    /*64 px*/
-    background-color: #10e47a;
-    text-align: left; }
-    .main-index .container-mision .mision {
-      margin: 0 1.5rem; }
-      .main-index .container-mision .mision .h2-mision {
-        align-items: center;
-        margin-top: 1rem;
-        margin-left: 0.0625rem;
-        font-size: 1.875rem;
-        font-weight: bold; }
-      .main-index .container-mision .mision .text-mision {
-        margin-top: 1rem;
-        text-align: left; }
-      .main-index .container-mision .mision .text-mision2 {
-        text-align: left;
-        margin-bottom: 3.5rem; }
-    .main-index .container-mision .img-mision {
-      display: flex;
-      flex-direction: column; }
-  .main-index .container-vision {
-    /* background-color: green;*/ }
-    .main-index .container-vision .vision {
-      margin: 0 1.5rem; }
-      .main-index .container-vision .vision .h2-vision {
-        align-items: center;
-        margin-top: 3rem;
-        margin-left: 0.0625rem;
-        font-size: 1.875rem;
-        font-weight: bold; }
-        .main-index .container-vision .vision .h2-vision .text-vision {
-          margin-top: 1rem;
-          text-align: left;
-          margin-bottom: 3rem; }
-    .main-index .container-vision .img-vision {
-      display: flex;
-      flex-direction: column; }
-  .main-index .container-valores {
-    background-color: #10e47a;
-    padding: 1rem; }
-    .main-index .container-valores .img-valores {
-      display: none; }
-    .main-index .container-valores .valores {
-      margin: 0 1.5rem; }
-    .main-index .container-valores .valores .h2-valores {
+
+/* :::::::::::: MISIÓN (index.html) (mobile)  ::::::::::::::::*/
+.container-mision {
+  /*margin: arriba y abajo - izq y derecha*/
+  padding-top: 3rem;
+  /*64 px*/
+  background-color: #10e47a;
+  text-align: left; }
+  .container-mision .mision {
+    margin: 0 1.5rem; }
+    .container-mision .mision .h2-mision {
+      align-items: center;
+      margin-top: 1rem;
+      margin-left: 0.0625rem;
+      font-size: 1.875rem;
+      font-weight: bold; }
+    .container-mision .mision .text-mision {
+      margin-top: 1rem;
+      text-align: left; }
+    .container-mision .mision .text-mision2 {
+      text-align: left;
+      margin-bottom: 3.5rem; }
+  .container-mision .img-mision {
+    display: flex;
+    flex-direction: column; }
+
+/* ::::::::::::: VISIÓN (index.html) (mobile) :::::::::::::::*/
+.container-vision {
+  /* background-color: green;*/ }
+  .container-vision .vision {
+    margin: 0 1.5rem; }
+    .container-vision .vision .h2-vision {
       align-items: center;
       margin-top: 3rem;
       margin-left: 0.0625rem;
       font-size: 1.875rem;
       font-weight: bold; }
-    .main-index .container-valores .valores .text-valores {
-      margin-top: 1rem;
-      text-align: left;
-      text-align: left;
-      margin-bottom: 3.5rem; }
+      .container-vision .vision .h2-vision .text-vision {
+        margin-top: 1rem;
+        text-align: left;
+        margin-bottom: 3rem; }
+  .container-vision .img-vision {
+    display: flex;
+    flex-direction: column; }
+
+/* :::::::::   VALORES (mobile) (index.html)  ::::::::: */
+.container-valores {
+  background-color: #10e47a;
+  padding: 1rem; }
+  .container-valores .img-valores {
+    display: none; }
+  .container-valores .valores {
+    margin: 0 1.5rem; }
+  .container-valores .valores .h2-valores {
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0.0625rem;
+    font-size: 1.875rem;
+    font-weight: bold; }
+  .container-valores .valores .text-valores {
+    margin-top: 1rem;
+    text-align: left;
+    text-align: left;
+    margin-bottom: 3.5rem; }
 
 /*********************************************************/
 /*************          Fin MAIN        ******************/
@@ -250,73 +252,72 @@ nav ul li a:active {
 /*********************************************************/
 /* ::::::::::::    Hero (tablet)    ::::::::::::::::*/
 @media screen and (min-width: 768px) {
-  .main-index {
-    /* :::::::::::: MISIÓN (index.html) (tablet)  ::::::::::::::::*/
-    /* ::::::::::::: VISIÓN (index.html) (tablet) :::::::::::::::*/
-    /* :::::::::   VALORES (index.html) (tablet) ::::::::: */ }
-    .main-index .hero {
-      height: 30%;
-      padding: 10%;
+  .hero {
+    height: 30%;
+    padding: 10%;
+    text-align: center;
+    background-color: #ff5174; }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-top: 4rem;
       text-align: center;
-      background-color: #ff5174; }
-      .main-index .hero h1 {
-        font-size: 3.5rem;
-        margin-top: 4rem;
-        text-align: center;
-        font-weight: bold; }
-    .main-index .container-mision {
-      /*margin: arriba y abajo - izq y derecha*/
-      padding-top: 3rem;
-      /*64 px*/
-      background-color: #10e47a;
-      text-align: left; }
-      .main-index .container-mision .mision {
-        margin: 0 3rem; }
-        .main-index .container-mision .mision .h2-mision {
-          align-items: center;
-          margin-top: 1rem;
-          margin-left: 0.0625rem;
-          font-size: 1.875rem;
-          font-weight: bold; }
-        .main-index .container-mision .mision .text-mision {
-          margin-top: 1rem;
-          text-align: left; }
-        .main-index .container-mision .mision .text-mision2 {
-          text-align: left;
-          margin-bottom: 3.5rem; }
-      .main-index .container-mision .img-mision {
-        display: flex;
-        flex-direction: column; }
-    .main-index .container-vision .vision {
+      font-weight: bold; }
+  /* :::::::::::: MISIÓN (index.html) (tablet)  ::::::::::::::::*/
+  .container-mision {
+    /*margin: arriba y abajo - izq y derecha*/
+    padding-top: 3rem;
+    /*64 px*/
+    background-color: #10e47a;
+    text-align: left; }
+    .container-mision .mision {
       margin: 0 3rem; }
-      .main-index .container-vision .vision .h2-vision {
+      .container-mision .mision .h2-mision {
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 1.875rem;
+        font-weight: bold; }
+      .container-mision .mision .text-mision {
+        margin-top: 1rem;
+        text-align: left; }
+      .container-mision .mision .text-mision2 {
+        text-align: left;
+        margin-bottom: 3.5rem; }
+    .container-mision .img-mision {
+      display: flex;
+      flex-direction: column; }
+  /* ::::::::::::: VISIÓN (index.html) (tablet) :::::::::::::::*/
+  .container-vision .vision {
+    margin: 0 3rem; }
+    .container-vision .vision .h2-vision {
+      align-items: center;
+      margin-top: 3rem;
+      margin-left: 0.0625rem;
+      font-size: 1.875rem;
+      font-weight: bold; }
+      .container-vision .vision .h2-vision .text-vision {
+        margin-top: 1rem;
+        text-align: left;
+        margin-bottom: 4rem; }
+  .container-vision .img-vision {
+    display: flex; }
+  /* :::::::::   VALORES (index.html) (tablet) ::::::::: */
+  .container-valores {
+    background-color: #10e47a; }
+    .container-valores .img-valores {
+      display: none; }
+    .container-valores .valores {
+      margin: 0 3rem; }
+      .container-valores .valores .h2-valores {
         align-items: center;
         margin-top: 3rem;
         margin-left: 0.0625rem;
         font-size: 1.875rem;
         font-weight: bold; }
-        .main-index .container-vision .vision .h2-vision .text-vision {
-          margin-top: 1rem;
-          text-align: left;
-          margin-bottom: 4rem; }
-    .main-index .container-vision .img-vision {
-      display: flex; }
-    .main-index .container-valores {
-      background-color: #10e47a; }
-      .main-index .container-valores .img-valores {
-        display: none; }
-      .main-index .container-valores .valores {
-        margin: 0 3rem; }
-        .main-index .container-valores .valores .h2-valores {
-          align-items: center;
-          margin-top: 3rem;
-          margin-left: 0.0625rem;
-          font-size: 1.875rem;
-          font-weight: bold; }
-        .main-index .container-valores .valores .text-valores {
-          margin-top: 1rem;
-          text-align: left;
-          margin-bottom: 3.5rem; } }
+      .container-valores .valores .text-valores {
+        margin-top: 1rem;
+        text-align: left;
+        margin-bottom: 3.5rem; } }
 
 /*********************************************************/
 /*************          Fin MAIN        ******************/
@@ -329,76 +330,75 @@ nav ul li a:active {
 /************            desktop 1024        *************/
 /*********************************************************/
 @media screen and (min-width: 1024px) {
-  .main-index {
-    /* :::::::::::: MISIÓN (index.html) (desktop 1024)  ::::::::::::::::*/
-    /* ::::::::::::: VISIÓN (index.html) (desktop 1024)) :::::::::::::::*/
-    /* :::::::::   VALORES (index.html) (desktop 1024) ::::::::: */ }
-    .main-index .hero {
-      height: 30%;
-      padding: 10%;
+  .hero {
+    height: 30%;
+    padding: 10%;
+    text-align: center;
+    background-color: #ff5174; }
+    .hero h1 {
+      font-size: 4rem;
+      margin-top: 4rem;
       text-align: center;
-      background-color: #ff5174; }
-      .main-index .hero h1 {
-        font-size: 4rem;
-        margin-top: 4rem;
-        text-align: center;
+      font-weight: bold; }
+  /* :::::::::::: MISIÓN (index.html) (desktop 1024)  ::::::::::::::::*/
+  .container-mision {
+    padding-top: 3.5rem;
+    background-color: #10e47a; }
+    .container-mision .mision {
+      margin: 0 15rem 2rem 15rem; }
+      .container-mision .mision .h2-mision {
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 2rem;
         font-weight: bold; }
-    .main-index .container-mision {
-      padding-top: 3.5rem;
-      background-color: #10e47a; }
-      .main-index .container-mision .mision {
-        margin: 0 15rem 2rem 15rem; }
-        .main-index .container-mision .mision .h2-mision {
-          margin-top: 1rem;
-          margin-left: 0.0625rem;
-          font-size: 2rem;
-          font-weight: bold; }
-        .main-index .container-mision .mision .text-mision {
-          margin-top: 2rem;
-          text-align: left;
-          font-size: 0.9375rem; }
-        .main-index .container-mision .mision .text-mision2 {
-          text-align: left;
-          margin-bottom: 3.5rem;
-          font-size: 0.9375rem; }
-      .main-index .container-mision .img-mision {
-        width: 100%; }
-    .main-index .container-vision {
-      display: flex; }
-      .main-index .container-vision .vision {
-        display: flex;
-        flex-direction: column; }
-        .main-index .container-vision .vision .h2-vision {
-          margin-top: 5rem;
-          font-weight: bold;
-          font-size: 2rem; }
-          .main-index .container-vision .vision .h2-vision .text-vision {
-            margin: 0.9375rem;
-            text-align: left; }
-      .main-index .container-vision .img-vision {
-        width: 80%; }
-    .main-index .container-valores {
-      background-color: #10e47a;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: 2fr;
-      grid-template-areas: "img-valores h2-valores" "img-valores text-valores"; }
-      .main-index .container-valores .img-valores {
-        grid-area: img-valores;
-        display: block;
-        width: 50%; }
-      .main-index .container-valores .valores {
-        display: flex;
-        flex-direction: column; }
-        .main-index .container-valores .valores .h2-valores {
-          grid-area: h2-valores;
-          font-weight: bold;
-          text-align: left;
-          font-size: 2rem; }
-        .main-index .container-valores .valores .text-valores {
-          grid-area: text-valores;
-          text-align: left; } }
+      .container-mision .mision .text-mision {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 0.9375rem; }
+      .container-mision .mision .text-mision2 {
+        text-align: left;
+        margin-bottom: 3.5rem;
+        font-size: 0.9375rem; }
+    .container-mision .img-mision {
+      width: 100%; }
+  /* ::::::::::::: VISIÓN (index.html) (desktop 1024)) :::::::::::::::*/
+  .container-vision {
+    display: flex; }
+    .container-vision .vision {
+      display: flex;
+      flex-direction: column; }
+      .container-vision .vision .h2-vision {
+        margin-top: 5rem;
+        font-weight: bold;
+        font-size: 2rem; }
+        .container-vision .vision .h2-vision .text-vision {
+          margin: 0.9375rem;
+          text-align: left; }
+    .container-vision .img-vision {
+      width: 80%; }
+  /* :::::::::   VALORES (index.html) (desktop 1024) ::::::::: */
+  .container-valores {
+    background-color: #10e47a;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "img-valores h2-valores" "img-valores text-valores"; }
+    .container-valores .img-valores {
+      grid-area: img-valores;
+      display: block;
+      width: 50%; }
+    .container-valores .valores {
+      display: flex;
+      flex-direction: column; }
+      .container-valores .valores .h2-valores {
+        grid-area: h2-valores;
+        font-weight: bold;
+        text-align: left;
+        font-size: 2rem; }
+      .container-valores .valores .text-valores {
+        grid-area: text-valores;
+        text-align: left; } }
 
 /*********************************************************/
 /*************          Fin MAIN        ******************/
@@ -411,79 +411,78 @@ nav ul li a:active {
 /************            desktop 1200        *************/
 /*********************************************************/
 @media screen and (min-width: 1200px) {
-  .main-index {
-    /* :::::::::::: MISIÓN (index.html) (desktop 1200)  ::::::::::::::::*/
-    /* ::::::::::::: VISIÓN (index.html) (desktop 1200)) :::::::::::::::*/
-    /* :::::::::   VALORES (index.html) (desktop 1200) ::::::::: */ }
-    .main-index .hero {
-      height: 30%;
-      padding: 10%;
+  .hero {
+    height: 30%;
+    padding: 10%;
+    text-align: center;
+    background-color: #ff5174; }
+    .hero h1 {
+      font-size: 5rem;
+      margin-top: 4rem;
       text-align: center;
-      background-color: #ff5174; }
-      .main-index .hero h1 {
-        font-size: 5rem;
-        margin-top: 4rem;
-        text-align: center;
-        font-weight: bold; }
-    .main-index .container-mision {
-      padding-top: 3.5rem;
-      background-color: #10e47a;
-      text-align: left; }
-      .main-index .container-mision .mision {
-        margin: 3rem 22rem; }
-        .main-index .container-mision .mision .h2-mision {
-          margin-top: 1rem;
-          margin-left: 0.0625rem;
-          font-size: 2rem;
-          font-weight: bold;
-          align-items: center; }
-        .main-index .container-mision .mision .text-mision {
-          margin-top: 2rem;
-          text-align: left; }
-        .main-index .container-mision .mision .text-mision2 {
-          text-align: left;
-          margin-bottom: 3.5rem; }
-      .main-index .container-mision .img-mision {
-        width: 100%; }
-    .main-index .container-vision {
+      font-weight: bold; }
+  /* :::::::::::: MISIÓN (index.html) (desktop 1200)  ::::::::::::::::*/
+  .container-mision {
+    padding-top: 3.5rem;
+    background-color: #10e47a;
+    text-align: left; }
+    .container-mision .mision {
+      margin: 3rem 22rem; }
+      .container-mision .mision .h2-mision {
+        margin-top: 1rem;
+        margin-left: 0.0625rem;
+        font-size: 2rem;
+        font-weight: bold;
+        align-items: center; }
+      .container-mision .mision .text-mision {
+        margin-top: 2rem;
+        text-align: left; }
+      .container-mision .mision .text-mision2 {
+        text-align: left;
+        margin-bottom: 3.5rem; }
+    .container-mision .img-mision {
+      width: 100%; }
+  /* ::::::::::::: VISIÓN (index.html) (desktop 1200)) :::::::::::::::*/
+  .container-vision {
+    display: flex;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "h2-vision img-vision img-vision" "text-vision img-vision img-vision"; }
+    .container-vision .vision {
       display: flex;
-      display: grid;
-      grid-template-columns: 3fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "h2-vision img-vision img-vision" "text-vision img-vision img-vision"; }
-      .main-index .container-vision .vision {
-        display: flex;
-        margin: 5rem; }
-        .main-index .container-vision .vision .h2-vision {
-          grid-area: h2-vision;
-          margin-top: 5rem;
-          font-weight: bold;
-          font-size: 2rem;
+      margin: 5rem; }
+      .container-vision .vision .h2-vision {
+        grid-area: h2-vision;
+        margin-top: 5rem;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 2rem; }
+        .container-vision .vision .h2-vision .text-vision {
+          grid-area: text-vision;
           text-align: left;
-          margin-bottom: 2rem; }
-          .main-index .container-vision .vision .h2-vision .text-vision {
-            grid-area: text-vision;
-            text-align: left;
-            margin-right: 10rem; }
-      .main-index .container-vision .img-vision {
-        grid-area: img-vision;
-        display: flex;
-        flex-direction: row; }
-    .main-index .container-valores {
-      background-color: #10e47a;
-      /*hereda grid*/ }
-      .main-index .container-valores .img-valores {
-        width: 50%; }
-      .main-index .container-valores .valores {
-        display: flex;
-        margin-left: 3rem;
-        margin-right: 10rem; }
-        .main-index .container-valores .valores .h2-valores {
-          font-weight: bold;
-          text-align: left;
-          font-size: 2rem; }
-        .main-index .container-valores .valores .text-valores {
-          text-align: left; } }
+          margin-right: 10rem; }
+    .container-vision .img-vision {
+      grid-area: img-vision;
+      display: flex;
+      flex-direction: row; }
+  /* :::::::::   VALORES (index.html) (desktop 1200) ::::::::: */
+  .container-valores {
+    background-color: #10e47a;
+    /*hereda grid*/ }
+    .container-valores .img-valores {
+      width: 50%; }
+    .container-valores .valores {
+      display: flex;
+      margin-left: 3rem;
+      margin-right: 10rem; }
+      .container-valores .valores .h2-valores {
+        font-weight: bold;
+        text-align: left;
+        font-size: 2rem; }
+      .container-valores .valores .text-valores {
+        text-align: left; } }
 
 /*********************************************************/
 /*************          Fin MAIN        ******************/
@@ -1506,5 +1505,5 @@ nav ul li a:active {
 /************            desktop 1200        *************/
 /*********************************************************/
 /*variables, mixin, extend*/
-.main-index .container-valores .valores .text-valores ul .valor-1, .main-index .container-valores .valores .text-valores ul .valor-2, .main-index .container-valores .valores .text-valores ul .valor-3 {
+.container-valores .valores .text-valores ul .valor-1, .container-valores .valores .text-valores ul .valor-2, .container-valores .valores .text-valores ul .valor-3 {
   padding-bottom: 1rem; }
